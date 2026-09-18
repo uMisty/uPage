@@ -92,6 +92,29 @@
   "url": "https://www.figma.com/design/W1YzNgkM2X2TH9enCZeS8X?node-id=3-2",
   "operationCount": 47,
   "validation": {
+    "updatedScreens": 6,
+    "projectLinks": 48,
+    "missingFonts": 0,
+    "allUpdatedDimensionsMatch": true,
+    "allUpdatedScreenshotsReviewed": true,
+    "allSectionStacksValid": true
+  },
+  "font": "Noto Sans SC",
+  "lastSyncedRevision": {
+    "date": "2026-09-18",
+    "reason": "Project list responsive redesign",
+    "screens": [
+      "profile-desktop-demo",
+      "profile-mobile-demo",
+      "layout-expansion-desktop",
+      "layout-expansion-mobile",
+      "projects-desktop",
+      "projects-mobile"
+    ],
+    "status": "synced",
+    "validationFile": "project-list-sync-validation.json"
+  },
+  "previousRevisionValidation": {
     "boards": 11,
     "assets": 19,
     "textLayers": 704,
@@ -103,6 +126,5 @@
     "allTextCountsMatch": true,
     "assetSvgExportsPassed": 19,
     "assetPng2xExportsPassed": 19
-  },
-  "font": "Noto Sans SC"
+  }
 }

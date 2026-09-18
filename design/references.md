@@ -65,3 +65,7 @@ Dennis 的官网正文抓取返回 403，因此版本依据是作者发布的设
 | [Simple Icons](https://github.com/simple-icons/simple-icons) | 提供品牌 SVG 图标 | 使用本地矢量图标识别工具，输出中内联图形 |
 
 这些案例支持“按用途组织技术栈”的设计方向，不代表对全行业采用率的统计。图标、名称与用途组合在一起；桌面分类为三列网格，移动分类为单列，各分类内工具按两列换行。上述规则是针对本项目内容密度的设计选择。
+
+## 2026-09-18 项目列表响应式修订
+
+参考 [W3C Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html) 的单列重排与 320 CSS px 窄屏原则，以及 [Target Size](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html) 的独立触控目标说明。具体构图为本项目的设计判断：移动端介绍通栏，标题与小缩略图同排，底部独立操作；桌面三列、操作顶部对齐。保留 44px 按钮高度。

@@ -1,0 +1,279 @@
+{
+  "date": "2026-09-18",
+  "status": "passed",
+  "screens": [
+    {
+      "id": "3:2",
+      "width": 1440,
+      "height": 3155,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Noto Sans SC"
+      ],
+      "textCount": 101,
+      "links": [
+        {
+          "id": "30:17",
+          "url": "https://example.com/projects/notes"
+        },
+        {
+          "id": "30:22",
+          "url": "https://example.com/github/notes"
+        },
+        {
+          "id": "30:80",
+          "url": "https://example.com/projects/timer"
+        },
+        {
+          "id": "30:85",
+          "url": "https://example.com/github/timer"
+        }
+      ],
+      "stacked": true
+    },
+    {
+      "id": "3:3",
+      "width": 390,
+      "height": 3817,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Noto Sans SC"
+      ],
+      "textCount": 97,
+      "links": [
+        {
+          "id": "31:47",
+          "url": "https://example.com/projects/notes"
+        },
+        {
+          "id": "31:52",
+          "url": "https://example.com/github/notes"
+        },
+        {
+          "id": "31:76",
+          "url": "https://example.com/projects/timer"
+        },
+        {
+          "id": "31:81",
+          "url": "https://example.com/github/timer"
+        }
+      ],
+      "stacked": true
+    },
+    {
+      "id": "8:2",
+      "width": 1440,
+      "height": 2798,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Noto Sans SC"
+      ],
+      "textCount": 117,
+      "links": [
+        {
+          "id": "30:110",
+          "url": "https://example.com/projects/notes"
+        },
+        {
+          "id": "30:115",
+          "url": "https://example.com/github/notes"
+        },
+        {
+          "id": "30:173",
+          "url": "https://example.com/projects/timer"
+        },
+        {
+          "id": "30:178",
+          "url": "https://example.com/github/timer"
+        },
+        {
+          "id": "30:205",
+          "url": "https://example.com/projects/palette"
+        },
+        {
+          "id": "30:210",
+          "url": "https://example.com/github/palette"
+        },
+        {
+          "id": "30:236",
+          "url": "https://example.com/projects/tasks"
+        },
+        {
+          "id": "30:241",
+          "url": "https://example.com/github/tasks"
+        },
+        {
+          "id": "30:262",
+          "url": "https://example.com/projects/journal"
+        },
+        {
+          "id": "30:267",
+          "url": "https://example.com/github/journal"
+        }
+      ],
+      "stacked": true
+    },
+    {
+      "id": "8:3",
+      "width": 390,
+      "height": 3292,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Noto Sans SC"
+      ],
+      "textCount": 115,
+      "links": [
+        {
+          "id": "31:139",
+          "url": "https://example.com/projects/notes"
+        },
+        {
+          "id": "31:144",
+          "url": "https://example.com/github/notes"
+        },
+        {
+          "id": "31:168",
+          "url": "https://example.com/projects/timer"
+        },
+        {
+          "id": "31:173",
+          "url": "https://example.com/github/timer"
+        },
+        {
+          "id": "31:200",
+          "url": "https://example.com/projects/palette"
+        },
+        {
+          "id": "31:205",
+          "url": "https://example.com/github/palette"
+        },
+        {
+          "id": "31:231",
+          "url": "https://example.com/projects/tasks"
+        },
+        {
+          "id": "31:236",
+          "url": "https://example.com/github/tasks"
+        },
+        {
+          "id": "31:257",
+          "url": "https://example.com/projects/journal"
+        },
+        {
+          "id": "31:262",
+          "url": "https://example.com/github/journal"
+        }
+      ],
+      "stacked": true
+    },
+    {
+      "id": "8:7",
+      "width": 1440,
+      "height": 1312,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Noto Sans SC"
+      ],
+      "textCount": 61,
+      "links": [
+        {
+          "id": "30:298",
+          "url": "https://example.com/projects/notes"
+        },
+        {
+          "id": "30:303",
+          "url": "https://example.com/github/notes"
+        },
+        {
+          "id": "30:361",
+          "url": "https://example.com/projects/timer"
+        },
+        {
+          "id": "30:366",
+          "url": "https://example.com/github/timer"
+        },
+        {
+          "id": "30:393",
+          "url": "https://example.com/projects/palette"
+        },
+        {
+          "id": "30:398",
+          "url": "https://example.com/github/palette"
+        },
+        {
+          "id": "30:424",
+          "url": "https://example.com/projects/tasks"
+        },
+        {
+          "id": "30:429",
+          "url": "https://example.com/github/tasks"
+        },
+        {
+          "id": "30:450",
+          "url": "https://example.com/projects/journal"
+        },
+        {
+          "id": "30:455",
+          "url": "https://example.com/github/journal"
+        }
+      ],
+      "stacked": true
+    },
+    {
+      "id": "8:8",
+      "width": 390,
+      "height": 1641,
+      "missingFonts": 0,
+      "fontFamilies": [
+        "Noto Sans SC"
+      ],
+      "textCount": 60,
+      "links": [
+        {
+          "id": "31:326",
+          "url": "https://example.com/projects/notes"
+        },
+        {
+          "id": "31:331",
+          "url": "https://example.com/github/notes"
+        },
+        {
+          "id": "31:355",
+          "url": "https://example.com/projects/timer"
+        },
+        {
+          "id": "31:360",
+          "url": "https://example.com/github/timer"
+        },
+        {
+          "id": "31:387",
+          "url": "https://example.com/projects/palette"
+        },
+        {
+          "id": "31:392",
+          "url": "https://example.com/github/palette"
+        },
+        {
+          "id": "31:418",
+          "url": "https://example.com/projects/tasks"
+        },
+        {
+          "id": "31:423",
+          "url": "https://example.com/github/tasks"
+        },
+        {
+          "id": "31:444",
+          "url": "https://example.com/projects/journal"
+        },
+        {
+          "id": "31:449",
+          "url": "https://example.com/github/journal"
+        }
+      ],
+      "stacked": true
+    }
+  ],
+  "screenshotsReviewed": 6,
+  "projectLinks": 48,
+  "notes": "All six screen dimensions match local manifest; original screen and section IDs preserved. Earlier full-file and asset export audits refer to previous revision."
+}

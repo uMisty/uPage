@@ -72,28 +72,28 @@ function featuredProject(p,x,y,w,mobile=false){
  return {svg:'<g id="Featured-'+esc(p.art)+'">'+r(x,y,w,h,16,palette[p.art]||C.soft)+b+'</g>',height:h};
 }
 function projectRow(p,x,y,w,mobile=false){
- const top=mobile?22:24,thumbW=mobile?96:208,thumbH=mobile?74:117,tx=x+thumbW+(mobile?16:28),textW=mobile?w-thumbW-16:w-thumbW-28-346;
- let b=line(x,y,x+w)+projectArt(p.art,x,y+top,thumbW,thumbH);
+ const top=mobile?24:28,thumbW=mobile?88:192,thumbH=mobile?55:108,tx=mobile?x:x+thumbW+28,textW=mobile?w-thumbW-20:w-thumbW-28-336;
+ let b=line(x,y,x+w)+projectArt(p.art,mobile?x+w-thumbW:x,y+top,thumbW,thumbH);
  const titleY=y+top+(mobile?20:29);
  const title=textBlock(tx,titleY,p.name,textW,mobile?21:27,C.ink,550,mobile?28:35);
  b+=title.svg;
- const descriptionY=titleY+title.height+(mobile?0:2);
- const description=textBlock(tx,descriptionY,p.description,textW,mobile?12:15,C.muted,400,mobile?19:23);
+ const descriptionY=mobile?Math.max(y+top+thumbH,titleY+title.height)+22:titleY+title.height+4;
+ const description=textBlock(mobile?x:tx,descriptionY,p.description,mobile?w:textW,15,C.muted,400,24);
  b+=description.svg;
  const infoEnd=descriptionY+description.height;
  let h;
  if(mobile){
-  const tagsY=Math.max(y+top+thumbH+22,infoEnd+8);
-  const tags=textBlock(x,tagsY,p.tags.join(' + '),w,11,C.muted,400,18);
+  const tagsY=infoEnd+8;
+  const tags=textBlock(x,tagsY,p.tags.join(' + '),w,12,C.muted,400,19);
   b+=tags.svg;
-  const actionsY=tagsY+tags.height+10,actions=projectActions(p,x,actionsY,true,false);
+  const actionsY=tagsY+tags.height+16,actions=projectActions(p,x,actionsY,true,false);
   b+=actions.svg;
   h=actionsY-y+actions.height+24;
  }else{
-  const tags=textBlock(tx,infoEnd+8,p.tags.join(' + '),textW,11,C.muted,400,18);
+  const tags=textBlock(tx,infoEnd+8,p.tags.join(' + '),textW,12,C.muted,400,19);
   b+=tags.svg;
-  h=Math.max(164,infoEnd-y+tags.height+28,top+thumbH+23);
-  b+=projectActions(p,x+w-304,y+(h-44)/2,false,false).svg;
+  h=Math.max(172,infoEnd-y+tags.height+28,top+thumbH+28);
+  b+=projectActions(p,x+w-304,y+top,false,false).svg;
  }
  return {svg:'<g id="Project-'+esc(p.art)+'">'+b+'</g>',height:h};
 }

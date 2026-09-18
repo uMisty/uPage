@@ -26,7 +26,8 @@ const rest = computed(() => props.config.projects.filter((_, index) => index !==
     <div v-if="rest.length" class="project-list">
       <article v-for="(project, index) in rest" :key="`${project.name}-${index}`" class="project-row" :class="{ 'no-image': !project.image }">
         <img v-if="project.image" :src="project.image" :alt="project.imageAlt || project.name" width="208" height="117" loading="lazy" class="project-thumbnail" />
-        <div class="project-copy"><h3>{{ project.name }}</h3><p class="project-description">{{ project.description }}</p></div>
+        <div class="project-copy"><h3>{{ project.name }}</h3></div>
+        <p class="project-description">{{ project.description }}</p>
         <p v-if="project.tags.length" class="project-tags">{{ project.tags.join(' + ') }}</p>
         <ProjectActions :project="project" :labels="config.labels" />
       </article>
