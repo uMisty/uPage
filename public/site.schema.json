@@ -1,0 +1,632 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 1
+    },
+    "site": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string"
+        },
+        "lang": {
+          "default": "zh-CN",
+          "type": "string"
+        },
+        "footer": {
+          "type": "string"
+        },
+        "footerLabel": {
+          "type": "string"
+        },
+        "footerUrl": {
+          "default": "",
+          "anyOf": [
+            {
+              "type": "string",
+              "const": ""
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "footer",
+        "footerLabel"
+      ]
+    },
+    "theme": {
+      "type": "object",
+      "properties": {
+        "background": {
+          "type": "string",
+          "pattern": "^#[\\da-f]{6}$"
+        },
+        "text": {
+          "type": "string",
+          "pattern": "^#[\\da-f]{6}$"
+        },
+        "muted": {
+          "type": "string",
+          "pattern": "^#[\\da-f]{6}$"
+        },
+        "accent": {
+          "type": "string",
+          "pattern": "^#[\\da-f]{6}$"
+        },
+        "line": {
+          "type": "string",
+          "pattern": "^#[\\da-f]{6}$"
+        },
+        "dark": {
+          "type": "string",
+          "pattern": "^#[\\da-f]{6}$"
+        },
+        "soft": {
+          "type": "string",
+          "pattern": "^#[\\da-f]{6}$"
+        }
+      },
+      "required": [
+        "background",
+        "text",
+        "muted",
+        "accent",
+        "line",
+        "dark",
+        "soft"
+      ]
+    },
+    "profile": {
+      "type": "object",
+      "properties": {
+        "eyebrow": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "suffix": {
+          "default": ".",
+          "type": "string"
+        },
+        "headline": {
+          "type": "string"
+        },
+        "headlineLines": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "bio": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "motto": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "image": {
+          "type": "string"
+        },
+        "imageAlt": {
+          "type": "string"
+        },
+        "blogLabel": {
+          "type": "string"
+        },
+        "projectsLabel": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "eyebrow",
+        "name",
+        "headline",
+        "bio",
+        "motto",
+        "image",
+        "imageAlt",
+        "blogLabel",
+        "projectsLabel"
+      ]
+    },
+    "sections": {
+      "type": "object",
+      "properties": {
+        "projects": {
+          "type": "object",
+          "properties": {
+            "eyebrow": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "moreLabel": {
+              "default": "",
+              "type": "string"
+            },
+            "moreUrl": {
+              "default": "",
+              "anyOf": [
+                {
+                  "type": "string",
+                  "const": ""
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "eyebrow",
+            "title"
+          ]
+        },
+        "writing": {
+          "type": "object",
+          "properties": {
+            "eyebrow": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "moreLabel": {
+              "default": "",
+              "type": "string"
+            }
+          },
+          "required": [
+            "eyebrow",
+            "title"
+          ]
+        },
+        "tools": {
+          "type": "object",
+          "properties": {
+            "eyebrow": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "moreLabel": {
+              "default": "",
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "eyebrow",
+            "title",
+            "description"
+          ]
+        },
+        "interests": {
+          "type": "object",
+          "properties": {
+            "eyebrow": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "moreLabel": {
+              "default": "",
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "eyebrow",
+            "title",
+            "description"
+          ]
+        }
+      },
+      "required": [
+        "projects",
+        "writing",
+        "tools",
+        "interests"
+      ]
+    },
+    "labels": {
+      "type": "object",
+      "properties": {
+        "demo": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "noProjectLinks": {
+          "type": "string"
+        },
+        "projectDateSuffix": {
+          "type": "string"
+        },
+        "retry": {
+          "type": "string"
+        },
+        "loading": {
+          "type": "string"
+        },
+        "emptyFeed": {
+          "type": "string"
+        },
+        "feedError": {
+          "type": "string"
+        },
+        "staleFeed": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "demo",
+        "source",
+        "noProjectLinks",
+        "projectDateSuffix",
+        "retry",
+        "loading",
+        "emptyFeed",
+        "feedError",
+        "staleFeed"
+      ]
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "tags": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "image": {
+            "default": "",
+            "type": "string"
+          },
+          "imageAlt": {
+            "default": "",
+            "type": "string"
+          },
+          "background": {
+            "default": "#DFE6D5",
+            "type": "string",
+            "pattern": "^#[\\da-f]{6}$"
+          },
+          "demoUrl": {
+            "default": "",
+            "anyOf": [
+              {
+                "type": "string",
+                "const": ""
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "githubUrl": {
+            "default": "",
+            "anyOf": [
+              {
+                "type": "string",
+                "const": ""
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "releasedAt": {
+            "default": "",
+            "type": "string"
+          },
+          "featured": {
+            "default": false,
+            "type": "boolean"
+          },
+          "releaseLabel": {
+            "default": "主推作品",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "description"
+        ]
+      }
+    },
+    "blog": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "default": true,
+          "type": "boolean"
+        },
+        "url": {
+          "default": "",
+          "anyOf": [
+            {
+              "type": "string",
+              "const": ""
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "feedUrl": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string",
+              "const": "/feed.xml"
+            },
+            {
+              "type": "string",
+              "const": ""
+            }
+          ]
+        },
+        "mode": {
+          "default": "server",
+          "type": "string",
+          "enum": [
+            "server",
+            "direct",
+            "snapshot"
+          ]
+        },
+        "limit": {
+          "default": 3,
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "cacheMinutes": {
+          "default": 10,
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1440
+        },
+        "showReadingTime": {
+          "default": true,
+          "type": "boolean"
+        },
+        "defaultCategory": {
+          "default": "随笔",
+          "type": "string"
+        }
+      },
+      "required": [
+        "feedUrl"
+      ]
+    },
+    "now": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "title": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "updatedLabel": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "text"
+            ]
+          }
+        }
+      },
+      "required": [
+        "enabled",
+        "eyebrow",
+        "title",
+        "updatedLabel",
+        "items"
+      ]
+    },
+    "toolGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "purpose": {
+                  "type": "string"
+                },
+                "icon": {
+                  "default": "",
+                  "type": "string"
+                },
+                "mark": {
+                  "default": "",
+                  "type": "string"
+                },
+                "url": {
+                  "default": "",
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "const": ""
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "name",
+                "purpose"
+              ]
+            }
+          }
+        },
+        "required": [
+          "name",
+          "items"
+        ]
+      }
+    },
+    "interests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "image": {
+            "default": "",
+            "type": "string"
+          },
+          "imageAlt": {
+            "default": "",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "description"
+        ]
+      }
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "mobileTitle": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "mobileDescription": {
+          "type": "string"
+        },
+        "email": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": ""
+            },
+            {
+              "type": "string",
+              "format": "email",
+              "pattern": "^(?:[A-Za-z0-9_'+\\-]+\\.)*[A-Za-z0-9_'+\\-]*[A-Za-z0-9_+-]@(?:[A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$"
+            }
+          ]
+        }
+      },
+      "required": [
+        "enabled",
+        "eyebrow",
+        "title",
+        "mobileTitle",
+        "description",
+        "mobileDescription",
+        "email"
+      ]
+    }
+  },
+  "required": [
+    "version",
+    "site",
+    "theme",
+    "profile",
+    "sections",
+    "labels",
+    "projects",
+    "blog",
+    "now",
+    "toolGroups",
+    "interests",
+    "contact"
+  ]
+}

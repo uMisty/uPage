@@ -1,0 +1,79 @@
+[
+  {
+    "screen": "profile-desktop-demo",
+    "width": 1440,
+    "height": 3147,
+    "changedPixels": 0,
+    "maxChannelDifference": 1
+  },
+  {
+    "screen": "profile-mobile-demo",
+    "width": 390,
+    "height": 3795,
+    "changedPixels": 0,
+    "maxChannelDifference": 1
+  },
+  {
+    "screen": "layout-expansion-desktop",
+    "width": 1440,
+    "height": 2766,
+    "changedPixels": 0,
+    "maxChannelDifference": 1
+  },
+  {
+    "screen": "layout-expansion-mobile",
+    "width": 390,
+    "height": 3204,
+    "changedPixels": 0,
+    "maxChannelDifference": 1
+  },
+  {
+    "screen": "profile-hero-desktop",
+    "width": 1440,
+    "height": 624,
+    "changedPixels": 0,
+    "maxChannelDifference": 0
+  },
+  {
+    "screen": "profile-hero-mobile",
+    "width": 390,
+    "height": 762,
+    "changedPixels": 0,
+    "maxChannelDifference": 0
+  },
+  {
+    "screen": "profile-lower-desktop",
+    "width": 1440,
+    "height": 1727,
+    "changedPixels": 0,
+    "maxChannelDifference": 1
+  },
+  {
+    "screen": "projects-desktop",
+    "width": 1440,
+    "height": 1280,
+    "changedPixels": 0,
+    "maxChannelDifference": 0
+  },
+  {
+    "screen": "projects-mobile",
+    "width": 390,
+    "height": 1553,
+    "changedPixels": 0,
+    "maxChannelDifference": 0
+  },
+  {
+    "screen": "tech-tools-desktop",
+    "width": 1312,
+    "height": 349,
+    "changedPixels": 0,
+    "maxChannelDifference": 0
+  },
+  {
+    "screen": "tech-tools-mobile",
+    "width": 390,
+    "height": 513,
+    "changedPixels": 0,
+    "maxChannelDifference": 0
+  }
+]

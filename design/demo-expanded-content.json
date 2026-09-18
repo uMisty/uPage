@@ -1,0 +1,241 @@
+{
+  "demo": true,
+  "profile": {
+    "name": "Alex",
+    "intro": "写代码，也创造一点不同。",
+    "headlineLines": [
+      "写代码，也创造",
+      "一点不同。"
+    ],
+    "bio": [
+      "热爱编程、设计与新事物，",
+      "把想法变成有温度的小作品。"
+    ],
+    "motto": [
+      "保持好奇，",
+      "持续创造。"
+    ],
+    "email": "hello@example.com"
+  },
+  "projects": [
+    {
+      "name": "Paper Notes",
+      "description": "轻量笔记与灵感收集工具。",
+      "tags": [
+        "React",
+        "TypeScript"
+      ],
+      "art": "notes",
+      "demoUrl": "https://example.com/projects/notes",
+      "githubUrl": "https://example.com/github/notes",
+      "releasedAt": "2026-09-18",
+      "featured": true,
+      "releaseLabel": "最近推出",
+      "summary": "把零散的灵感、阅读摘录和日常笔记，收进一个安静的小空间。"
+    },
+    {
+      "name": "Focus Timer",
+      "description": "为专注留出一小段安静的时间。",
+      "tags": [
+        "Vue",
+        "CSS"
+      ],
+      "art": "timer",
+      "demoUrl": "https://example.com/projects/timer",
+      "githubUrl": "https://example.com/github/timer",
+      "releasedAt": "2026-08-25",
+      "featured": false
+    },
+    {
+      "name": "Palette Lab",
+      "description": "收集配色灵感，找到舒服的色彩组合。",
+      "tags": [
+        "CSS",
+        "设计工具"
+      ],
+      "art": "palette",
+      "demoUrl": "https://example.com/projects/palette",
+      "githubUrl": "https://example.com/github/palette",
+      "releasedAt": "2026-08-11",
+      "featured": false
+    },
+    {
+      "name": "Little Tasks",
+      "description": "一份简单的待办，让一天更有条理。",
+      "tags": [
+        "Vue",
+        "TypeScript"
+      ],
+      "art": "tasks",
+      "demoUrl": "https://example.com/projects/tasks",
+      "githubUrl": "https://example.com/github/tasks",
+      "releasedAt": "2026-07-22",
+      "featured": false
+    },
+    {
+      "name": "Photo Journal",
+      "description": "用影像和短句记录日常。",
+      "tags": [
+        "React",
+        "摄影"
+      ],
+      "art": "journal",
+      "demoUrl": "https://example.com/projects/journal",
+      "githubUrl": "https://example.com/github/journal",
+      "releasedAt": "2026-06-09",
+      "featured": false
+    }
+  ],
+  "articles": [
+    {
+      "date": "09.12",
+      "title": "让个人主页更像你自己",
+      "category": "设计思考",
+      "duration": "5 分钟",
+      "url": "https://example.com/posts/profile"
+    },
+    {
+      "date": "08.28",
+      "title": "从一个小工具开始创造",
+      "category": "开发笔记",
+      "duration": "4 分钟",
+      "url": "https://example.com/posts/making"
+    },
+    {
+      "date": "08.16",
+      "title": "那些让界面舒服一点的细节",
+      "category": "界面设计",
+      "duration": "6 分钟",
+      "url": "https://example.com/posts/details"
+    }
+  ],
+  "now": [
+    {
+      "label": "在做",
+      "text": "打磨一个个人主页模板"
+    },
+    {
+      "label": "在学",
+      "text": "探索自然的界面动效"
+    },
+    {
+      "label": "在读",
+      "text": "整理设计与开发笔记"
+    }
+  ],
+  "toolGroups": [
+    {
+      "name": "界面开发",
+      "items": [
+        {
+          "name": "React",
+          "purpose": "组件与交互",
+          "icon": "react",
+          "color": "#087EA4"
+        },
+        {
+          "name": "Vue",
+          "purpose": "轻量应用界面",
+          "icon": "vuedotjs",
+          "color": "#42B883"
+        },
+        {
+          "name": "Storybook",
+          "purpose": "组件预览",
+          "mark": "Sb"
+        }
+      ]
+    },
+    {
+      "name": "语言与运行",
+      "items": [
+        {
+          "name": "TypeScript",
+          "purpose": "类型与工程",
+          "icon": "typescript",
+          "color": "#3178C6"
+        },
+        {
+          "name": "Node.js",
+          "purpose": "服务端脚本",
+          "icon": "nodedotjs",
+          "color": "#5FA04E"
+        },
+        {
+          "name": "HTML",
+          "purpose": "页面结构",
+          "mark": "H"
+        },
+        {
+          "name": "CSS",
+          "purpose": "布局与样式",
+          "mark": "CSS"
+        }
+      ]
+    },
+    {
+      "name": "设计与协作",
+      "items": [
+        {
+          "name": "Figma",
+          "purpose": "设计与原型",
+          "icon": "figma",
+          "color": "#A259FF"
+        },
+        {
+          "name": "Git",
+          "purpose": "版本与协作",
+          "icon": "git",
+          "color": "#F05032"
+        },
+        {
+          "name": "Penpot",
+          "purpose": "界面设计",
+          "mark": "P"
+        }
+      ]
+    },
+    {
+      "name": "内容与笔记",
+      "items": [
+        {
+          "name": "Markdown",
+          "purpose": "内容书写",
+          "mark": "Md"
+        },
+        {
+          "name": "Obsidian",
+          "purpose": "知识整理",
+          "mark": "Ob"
+        }
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "摄影",
+      "description": "留意日常的光影",
+      "icon": "camera"
+    },
+    {
+      "name": "阅读",
+      "description": "收藏值得重读的句子",
+      "icon": "book"
+    },
+    {
+      "name": "游戏",
+      "description": "在另一个世界散步",
+      "icon": "game"
+    },
+    {
+      "name": "音乐",
+      "description": "用旋律为日常留白",
+      "icon": "music"
+    },
+    {
+      "name": "散步",
+      "description": "沿途发现新的风景",
+      "icon": "walk"
+    }
+  ]
+}

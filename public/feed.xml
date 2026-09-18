@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:upage="https://example.com/upage">
+  <channel>
+    <title>Alex 的博客 · 示例订阅</title>
+    <link>https://example.com/blog</link>
+    <description>本地 RSS 演示。正式使用时在 site.config.json 中替换 blog.feedUrl。</description>
+    <language>zh-CN</language>
+    <item>
+      <title>让个人主页更像你自己</title>
+      <link>https://example.com/posts/profile</link>
+      <guid>https://example.com/posts/profile</guid>
+      <pubDate>Sat, 12 Sep 2026 08:00:00 +0800</pubDate>
+      <category>设计思考</category>
+      <description>从一些微小的细节开始，让个人主页成为属于自己的空间。</description>
+      <upage:readingMinutes>5</upage:readingMinutes>
+    </item>
+    <item>
+      <title>从一个小工具开始创造</title>
+      <link>https://example.com/posts/making</link>
+      <pubDate>Fri, 28 Aug 2026 08:00:00 +0800</pubDate>
+      <category>开发笔记</category>
+      <description>把一个简单的想法，变成可以使用的小作品。</description>
+      <upage:readingMinutes>4</upage:readingMinutes>
+    </item>
+    <item>
+      <title>那些让界面舒服一点的细节</title>
+      <link>https://example.com/posts/details</link>
+      <pubDate>Sun, 16 Aug 2026 08:00:00 +0800</pubDate>
+      <category>界面设计</category>
+      <description>留白、排版与克制的色彩，是日常设计中简单的快乐。</description>
+      <upage:readingMinutes>6</upage:readingMinutes>
+    </item>
+  </channel>
+</rss>

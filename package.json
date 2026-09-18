@@ -1,0 +1,27 @@
+{
+  "name": "upage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.18.0" },
+  "dependencies": {
+    "vue": "^3.5.43", "zod": "^4.6.5", "fast-xml-parser": "^5.11.1",
+    "entities": "^8.1.0", "ipaddr.js": "^2.5.0", "sirv": "^3.0.2", "tsx": "^4.23.13",
+    "@fontsource-variable/noto-sans-sc": "^5.2.0"
+  },
+  "devDependencies": {
+    "vite": "7.3.1", "@vitejs/plugin-vue": "6.0.4", "typescript": "~5.9.3",
+    "vue-tsc": "3.3.11", "@types/node": "^24.0.0", "vitest": "4.0.18", "@playwright/test": "1.58.2"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "npm run typecheck && vite build",
+    "typecheck": "vue-tsc --noEmit",
+    "schema": "tsx scripts/config-schema.ts",
+    "preview": "vite preview --host 127.0.0.1",
+    "start": "tsx server/index.ts",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "build:static": "npm run build && tsx scripts/build-static.ts"
+  }
+}

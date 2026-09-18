@@ -1,0 +1,108 @@
+{
+  "fileKey": "W1YzNgkM2X2TH9enCZeS8X",
+  "pages": [
+    {
+      "id": "0:1",
+      "name": "完整页面"
+    },
+    {
+      "id": "2:2",
+      "name": "多内容排列"
+    },
+    {
+      "id": "2:3",
+      "name": "模块设计"
+    },
+    {
+      "id": "2:4",
+      "name": "独立切图"
+    }
+  ],
+  "screens": {
+    "profile-desktop-demo": "3:2",
+    "profile-mobile-demo": "3:3",
+    "layout-expansion-desktop": "8:2",
+    "layout-expansion-mobile": "8:3",
+    "profile-hero-desktop": "8:4",
+    "profile-hero-mobile": "8:5",
+    "profile-lower-desktop": "8:6",
+    "projects-desktop": "8:7",
+    "projects-mobile": "8:8",
+    "tech-tools-desktop": "8:9",
+    "tech-tools-mobile": "8:10"
+  },
+  "sections": {
+    "profile-desktop-demo-00": "3:4",
+    "profile-desktop-demo-02": "5:2",
+    "profile-desktop-demo-04": "7:2",
+    "profile-desktop-demo-06": "7:45",
+    "profile-desktop-demo-08": "7:92",
+    "profile-desktop-demo-10": "7:147",
+    "profile-desktop-demo-12": "7:158",
+    "profile-mobile-demo-00": "7:163",
+    "profile-mobile-demo-02": "7:283",
+    "profile-mobile-demo-04": "7:376",
+    "profile-mobile-demo-06": "7:415",
+    "profile-mobile-demo-08": "7:461",
+    "profile-mobile-demo-10": "7:515",
+    "profile-mobile-demo-12": "7:525",
+    "layout-expansion-desktop-00": "10:2",
+    "layout-expansion-desktop-01": "10:5",
+    "layout-expansion-desktop-03": "10:194",
+    "layout-expansion-desktop-05": "10:272",
+    "layout-expansion-mobile-00": "10:350",
+    "layout-expansion-mobile-01": "10:353",
+    "layout-expansion-mobile-03": "10:541",
+    "layout-expansion-mobile-05": "10:618",
+    "profile-hero-desktop-00": "11:2",
+    "profile-hero-mobile-00": "11:121",
+    "projects-desktop-01": "12:3",
+    "projects-mobile-01": "12:183",
+    "profile-lower-desktop-01": "12:362",
+    "profile-lower-desktop-03": "12:405",
+    "profile-lower-desktop-05": "12:452",
+    "profile-lower-desktop-07": "12:507",
+    "profile-lower-desktop-09": "12:518",
+    "tech-tools-desktop-00": "12:523",
+    "tech-tools-mobile-00": "12:569"
+  },
+  "assets": {
+    "hero-creative-workspace": "13:5",
+    "project-notes": "13:110",
+    "project-timer": "13:146",
+    "project-palette": "13:163",
+    "project-tasks": "13:183",
+    "project-journal": "13:202",
+    "interest-camera": "13:216",
+    "interest-book": "13:233",
+    "interest-game": "13:249",
+    "interest-music": "13:265",
+    "interest-walk": "13:279",
+    "icon-react": "13:288",
+    "icon-vuedotjs": "13:293",
+    "icon-typescript": "13:298",
+    "icon-nodedotjs": "13:303",
+    "icon-figma": "13:308",
+    "icon-git": "13:313",
+    "icon-arrow-up-right-ink": "13:318",
+    "icon-arrow-up-right-white": "13:323"
+  },
+  "status": "complete",
+  "team": "uMisty",
+  "url": "https://www.figma.com/design/W1YzNgkM2X2TH9enCZeS8X?node-id=3-2",
+  "operationCount": 47,
+  "validation": {
+    "boards": 11,
+    "assets": 19,
+    "textLayers": 704,
+    "vectorLayers": 1317,
+    "projectLinks": 48,
+    "missingFonts": 0,
+    "rasterImageFills": 0,
+    "allDimensionsMatch": true,
+    "allTextCountsMatch": true,
+    "assetSvgExportsPassed": 19,
+    "assetPng2xExportsPassed": 19
+  },
+  "font": "Noto Sans SC"
+}

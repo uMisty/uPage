@@ -1,0 +1,464 @@
+[
+  {
+    "Name": "layout-expansion-desktop.svg",
+    "Text": 117,
+    "Vector": 142,
+    "Images": 0,
+    "Links": 10
+  },
+  {
+    "Name": "layout-expansion-mobile.svg",
+    "Text": 115,
+    "Vector": 141,
+    "Images": 0,
+    "Links": 10
+  },
+  {
+    "Name": "profile-desktop-demo.svg",
+    "Text": 101,
+    "Vector": 199,
+    "Images": 0,
+    "Links": 4
+  },
+  {
+    "Name": "profile-hero-desktop.svg",
+    "Text": 10,
+    "Vector": 102,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-hero-mobile.svg",
+    "Text": 11,
+    "Vector": 102,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-lower-desktop.svg",
+    "Text": 59,
+    "Vector": 58,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-mobile-demo.svg",
+    "Text": 97,
+    "Vector": 197,
+    "Images": 0,
+    "Links": 4
+  },
+  {
+    "Name": "projects-desktop.svg",
+    "Text": 61,
+    "Vector": 80,
+    "Images": 0,
+    "Links": 10
+  },
+  {
+    "Name": "projects-mobile.svg",
+    "Text": 60,
+    "Vector": 80,
+    "Images": 0,
+    "Links": 10
+  },
+  {
+    "Name": "tech-tools-desktop.svg",
+    "Text": 18,
+    "Vector": 15,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "tech-tools-mobile.svg",
+    "Text": 18,
+    "Vector": 14,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "hero-creative-workspace.svg",
+    "Text": 2,
+    "Vector": 97,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "icon-arrow-up-right-ink.svg",
+    "Text": 0,
+    "Vector": 1,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "icon-arrow-up-right-white.svg",
+    "Text": 0,
+    "Vector": 1,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "icon-figma.svg",
+    "Text": 0,
+    "Vector": 1,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "icon-git.svg",
+    "Text": 0,
+    "Vector": 1,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "icon-nodedotjs.svg",
+    "Text": 0,
+    "Vector": 1,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "icon-react.svg",
+    "Text": 0,
+    "Vector": 1,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "icon-typescript.svg",
+    "Text": 0,
+    "Vector": 1,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "icon-vuedotjs.svg",
+    "Text": 0,
+    "Vector": 1,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "interest-book.svg",
+    "Text": 4,
+    "Vector": 6,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "interest-camera.svg",
+    "Text": 0,
+    "Vector": 12,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "interest-game.svg",
+    "Text": 0,
+    "Vector": 11,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "interest-music.svg",
+    "Text": 1,
+    "Vector": 8,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "interest-walk.svg",
+    "Text": 0,
+    "Vector": 5,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "project-journal.svg",
+    "Text": 2,
+    "Vector": 7,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "project-notes.svg",
+    "Text": 12,
+    "Vector": 19,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "project-palette.svg",
+    "Text": 7,
+    "Vector": 8,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "project-tasks.svg",
+    "Text": 5,
+    "Vector": 9,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "project-timer.svg",
+    "Text": 4,
+    "Vector": 8,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "layout-expansion-desktop-00.svg",
+    "Text": 1,
+    "Vector": 0,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "layout-expansion-desktop-01.svg",
+    "Text": 61,
+    "Vector": 79,
+    "Images": 0,
+    "Links": 10
+  },
+  {
+    "Name": "layout-expansion-desktop-03.svg",
+    "Text": 37,
+    "Vector": 20,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "layout-expansion-desktop-05.svg",
+    "Text": 18,
+    "Vector": 42,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "layout-expansion-mobile-00.svg",
+    "Text": 1,
+    "Vector": 0,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "layout-expansion-mobile-01.svg",
+    "Text": 60,
+    "Vector": 79,
+    "Images": 0,
+    "Links": 10
+  },
+  {
+    "Name": "layout-expansion-mobile-03.svg",
+    "Text": 37,
+    "Vector": 19,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "layout-expansion-mobile-05.svg",
+    "Text": 17,
+    "Vector": 42,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-desktop-demo-00.svg",
+    "Text": 10,
+    "Vector": 101,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-desktop-demo-02.svg",
+    "Text": 32,
+    "Vector": 40,
+    "Images": 0,
+    "Links": 4
+  },
+  {
+    "Name": "profile-desktop-demo-04.svg",
+    "Text": 22,
+    "Vector": 10,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-desktop-demo-06.svg",
+    "Text": 18,
+    "Vector": 14,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-desktop-demo-08.svg",
+    "Text": 13,
+    "Vector": 29,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-desktop-demo-10.svg",
+    "Text": 4,
+    "Vector": 3,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-desktop-demo-12.svg",
+    "Text": 2,
+    "Vector": 1,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-hero-desktop-00.svg",
+    "Text": 10,
+    "Vector": 101,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-hero-mobile-00.svg",
+    "Text": 11,
+    "Vector": 101,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-lower-desktop-00.svg",
+    "Text": 0,
+    "Vector": 0,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-lower-desktop-01.svg",
+    "Text": 22,
+    "Vector": 10,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-lower-desktop-03.svg",
+    "Text": 18,
+    "Vector": 14,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-lower-desktop-05.svg",
+    "Text": 13,
+    "Vector": 29,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-lower-desktop-07.svg",
+    "Text": 4,
+    "Vector": 3,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-lower-desktop-09.svg",
+    "Text": 2,
+    "Vector": 1,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-mobile-demo-00.svg",
+    "Text": 11,
+    "Vector": 101,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-mobile-demo-02.svg",
+    "Text": 31,
+    "Vector": 40,
+    "Images": 0,
+    "Links": 4
+  },
+  {
+    "Name": "profile-mobile-demo-04.svg",
+    "Text": 19,
+    "Vector": 10,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-mobile-demo-06.svg",
+    "Text": 18,
+    "Vector": 13,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-mobile-demo-08.svg",
+    "Text": 12,
+    "Vector": 29,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-mobile-demo-10.svg",
+    "Text": 4,
+    "Vector": 2,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "profile-mobile-demo-12.svg",
+    "Text": 2,
+    "Vector": 1,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "projects-desktop-00.svg",
+    "Text": 0,
+    "Vector": 0,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "projects-desktop-01.svg",
+    "Text": 61,
+    "Vector": 79,
+    "Images": 0,
+    "Links": 10
+  },
+  {
+    "Name": "projects-mobile-00.svg",
+    "Text": 0,
+    "Vector": 0,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "projects-mobile-01.svg",
+    "Text": 60,
+    "Vector": 79,
+    "Images": 0,
+    "Links": 10
+  },
+  {
+    "Name": "tech-tools-desktop-00.svg",
+    "Text": 18,
+    "Vector": 14,
+    "Images": 0,
+    "Links": 0
+  },
+  {
+    "Name": "tech-tools-mobile-00.svg",
+    "Text": 18,
+    "Vector": 13,
+    "Images": 0,
+    "Links": 0
+  }
+]

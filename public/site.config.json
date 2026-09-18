@@ -1,0 +1,87 @@
+{
+  "$schema": "./site.schema.json",
+  "version": 1,
+  "site": {
+    "title": "Alex · 写代码，也创造一点不同",
+    "description": "热爱编程、设计与新事物，把想法变成有温度的小作品。",
+    "lang": "zh-CN",
+    "footer": "© 2026 Alex · 公共示例",
+    "footerLabel": "example.com",
+    "footerUrl": "https://example.com"
+  },
+  "theme": {
+    "background": "#F5F3ED", "text": "#242822", "muted": "#71766C",
+    "accent": "#2853E8", "line": "#D5D8CF", "dark": "#242B26", "soft": "#DFE6D5"
+  },
+  "profile": {
+    "eyebrow": "你好，我是 / 开发者", "name": "Alex", "suffix": ".",
+    "headline": "写代码，也创造一点不同。",
+    "headlineLines": ["写代码，也创造", "一点不同。"],
+    "bio": ["热爱编程、设计与新事物，", "把想法变成有温度的小作品。"],
+    "motto": ["保持好奇，", "持续创造。"],
+    "image": "/assets/hero-creative-workspace.svg",
+    "imageAlt": "一张摆着电脑、笔记本、咖啡和绿植的创作工作台",
+    "blogLabel": "阅读博客", "projectsLabel": "查看我的作品"
+  },
+  "sections": {
+    "projects": { "eyebrow": "精选项目", "title": "把想法，做成作品。", "moreLabel": "全部项目", "moreUrl": "https://example.com/projects" },
+    "writing": { "eyebrow": "文字与近况", "title": "随手写下。", "moreLabel": "全部文章" },
+    "tools": { "eyebrow": "创作工具", "title": "我的工作台。", "description": "用顺手的工具，把灵感变成日常。" },
+    "interests": { "eyebrow": "代码之外", "title": "生活，也有灵感。", "description": "离开屏幕，收集一点新的视角。" }
+  },
+  "labels": {
+    "demo": "Demo", "source": "GitHub 源码", "noProjectLinks": "暂未开放链接",
+    "projectDateSuffix": "示例项目", "retry": "重新加载", "loading": "正在读取最近的文章…",
+    "emptyFeed": "还没有文章，下一次灵感正在路上。",
+    "feedError": "文章暂时没有加载出来，请稍后再试。",
+    "staleFeed": "订阅暂时无法更新，先看看这些文章。"
+  },
+  "projects": [
+    {
+      "name": "Paper Notes", "description": "轻量笔记与灵感收集工具。",
+      "summary": "把零散的灵感、阅读摘录和日常笔记，收进一个安静的小空间。",
+      "tags": ["React", "TypeScript"], "image": "/assets/project-notes.svg",
+      "imageAlt": "Paper Notes 笔记应用预览", "background": "#DDE5D5",
+      "demoUrl": "https://example.com/projects/notes", "githubUrl": "https://example.com/github/notes",
+      "releasedAt": "2026-09-18", "featured": true, "releaseLabel": "最近推出"
+    },
+    {
+      "name": "Focus Timer", "description": "为专注留出一小段安静的时间。",
+      "tags": ["Vue", "CSS"], "image": "/assets/project-timer.svg", "imageAlt": "Focus Timer 专注计时器预览",
+      "background": "#D7E1F5", "demoUrl": "https://example.com/projects/timer", "githubUrl": "https://example.com/github/timer",
+      "releasedAt": "2026-08-25", "featured": false
+    }
+  ],
+  "blog": {
+    "enabled": true, "url": "https://example.com/blog", "feedUrl": "/feed.xml", "mode": "server",
+    "limit": 3, "cacheMinutes": 10, "showReadingTime": true, "defaultCategory": "随笔"
+  },
+  "now": {
+    "enabled": true, "eyebrow": "此刻 / NOW", "title": ["保持好奇，", "持续创造。"],
+    "updatedLabel": "2026.09 / 示例动态",
+    "items": [{ "label": "在做", "text": "打磨一个个人主页模板" }, { "label": "在学", "text": "探索自然的界面动效" }, { "label": "在读", "text": "整理设计与开发笔记" }]
+  },
+  "toolGroups": [
+    { "name": "界面开发", "items": [
+      { "name": "React", "purpose": "组件与交互", "icon": "/assets/icon-react.svg" },
+      { "name": "Vue", "purpose": "轻量应用界面", "icon": "/assets/icon-vuedotjs.svg" }
+    ] },
+    { "name": "语言与运行", "items": [
+      { "name": "TypeScript", "purpose": "类型与工程", "icon": "/assets/icon-typescript.svg" },
+      { "name": "Node.js", "purpose": "服务端脚本", "icon": "/assets/icon-nodedotjs.svg" }
+    ] },
+    { "name": "设计与协作", "items": [
+      { "name": "Figma", "purpose": "设计与原型", "icon": "/assets/icon-figma.svg" },
+      { "name": "Git", "purpose": "版本与协作", "icon": "/assets/icon-git.svg" }
+    ] }
+  ],
+  "interests": [
+    { "name": "摄影", "description": "留意日常的光影", "image": "/assets/interest-camera.svg", "imageAlt": "相机和远处的山峦" },
+    { "name": "阅读", "description": "收藏值得重读的句子", "image": "/assets/interest-book.svg", "imageAlt": "两本叠放的书" },
+    { "name": "游戏", "description": "在另一个世界散步", "image": "/assets/interest-game.svg", "imageAlt": "浅紫色背景上的游戏手柄" }
+  ],
+  "contact": {
+    "enabled": true, "eyebrow": "打个招呼", "title": "聊聊你的下个想法。", "mobileTitle": "有个新想法？",
+    "description": "关于作品、技术，或只是打个招呼。", "mobileDescription": "一起做点有趣的事。", "email": "hello@example.com"
+  }
+}

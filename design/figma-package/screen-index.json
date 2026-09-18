@@ -1,0 +1,550 @@
+[
+  {
+    "base": "profile-desktop-demo",
+    "name": "完整页面 / 桌面 1440",
+    "width": 1440,
+    "height": 3147,
+    "sections": [
+      {
+        "name": "自我介绍",
+        "width": 1440,
+        "height": 592,
+        "key": "profile-desktop-demo-00",
+        "y": 0
+      },
+      {
+        "name": "Spacing / 64",
+        "width": 1440,
+        "height": 64,
+        "spacer": true,
+        "key": "profile-desktop-demo-01",
+        "y": 592
+      },
+      {
+        "name": "精选项目",
+        "width": 1440,
+        "height": 724,
+        "key": "profile-desktop-demo-02",
+        "y": 656
+      },
+      {
+        "name": "Spacing / 72",
+        "width": 1440,
+        "height": 72,
+        "spacer": true,
+        "key": "profile-desktop-demo-03",
+        "y": 1380
+      },
+      {
+        "name": "文字与近况",
+        "width": 1440,
+        "height": 437,
+        "key": "profile-desktop-demo-04",
+        "y": 1452
+      },
+      {
+        "name": "Spacing / 72",
+        "width": 1440,
+        "height": 72,
+        "spacer": true,
+        "key": "profile-desktop-demo-05",
+        "y": 1889
+      },
+      {
+        "name": "创作工具",
+        "width": 1440,
+        "height": 301,
+        "key": "profile-desktop-demo-06",
+        "y": 1961
+      },
+      {
+        "name": "Spacing / 72",
+        "width": 1440,
+        "height": 72,
+        "spacer": true,
+        "key": "profile-desktop-demo-07",
+        "y": 2262
+      },
+      {
+        "name": "代码之外",
+        "width": 1440,
+        "height": 396,
+        "key": "profile-desktop-demo-08",
+        "y": 2334
+      },
+      {
+        "name": "Spacing / 72",
+        "width": 1440,
+        "height": 72,
+        "spacer": true,
+        "key": "profile-desktop-demo-09",
+        "y": 2730
+      },
+      {
+        "name": "联系",
+        "width": 1440,
+        "height": 243,
+        "key": "profile-desktop-demo-10",
+        "y": 2802
+      },
+      {
+        "name": "Spacing / 42",
+        "width": 1440,
+        "height": 42,
+        "spacer": true,
+        "key": "profile-desktop-demo-11",
+        "y": 3045
+      },
+      {
+        "name": "页脚",
+        "width": 1440,
+        "height": 60,
+        "key": "profile-desktop-demo-12",
+        "y": 3087
+      }
+    ]
+  },
+  {
+    "base": "profile-mobile-demo",
+    "name": "完整页面 / 移动 390",
+    "width": 390,
+    "height": 3795,
+    "sections": [
+      {
+        "name": "自我介绍",
+        "width": 390,
+        "height": 730,
+        "key": "profile-mobile-demo-00",
+        "y": 0
+      },
+      {
+        "name": "Spacing / 44",
+        "width": 390,
+        "height": 44,
+        "spacer": true,
+        "key": "profile-mobile-demo-01",
+        "y": 730
+      },
+      {
+        "name": "精选项目",
+        "width": 390,
+        "height": 863,
+        "key": "profile-mobile-demo-02",
+        "y": 774
+      },
+      {
+        "name": "Spacing / 48",
+        "width": 390,
+        "height": 48,
+        "spacer": true,
+        "key": "profile-mobile-demo-03",
+        "y": 1637
+      },
+      {
+        "name": "文字与近况",
+        "width": 390,
+        "height": 721,
+        "key": "profile-mobile-demo-04",
+        "y": 1685
+      },
+      {
+        "name": "Spacing / 48",
+        "width": 390,
+        "height": 48,
+        "spacer": true,
+        "key": "profile-mobile-demo-05",
+        "y": 2406
+      },
+      {
+        "name": "创作工具",
+        "width": 390,
+        "height": 465,
+        "key": "profile-mobile-demo-06",
+        "y": 2454
+      },
+      {
+        "name": "Spacing / 48",
+        "width": 390,
+        "height": 48,
+        "spacer": true,
+        "key": "profile-mobile-demo-07",
+        "y": 2919
+      },
+      {
+        "name": "代码之外",
+        "width": 390,
+        "height": 476,
+        "key": "profile-mobile-demo-08",
+        "y": 2967
+      },
+      {
+        "name": "Spacing / 48",
+        "width": 390,
+        "height": 48,
+        "spacer": true,
+        "key": "profile-mobile-demo-09",
+        "y": 3443
+      },
+      {
+        "name": "联系",
+        "width": 390,
+        "height": 216,
+        "key": "profile-mobile-demo-10",
+        "y": 3491
+      },
+      {
+        "name": "Spacing / 28",
+        "width": 390,
+        "height": 28,
+        "spacer": true,
+        "key": "profile-mobile-demo-11",
+        "y": 3707
+      },
+      {
+        "name": "页脚",
+        "width": 390,
+        "height": 60,
+        "key": "profile-mobile-demo-12",
+        "y": 3735
+      }
+    ]
+  },
+  {
+    "base": "layout-expansion-desktop",
+    "name": "多内容排列 / 桌面 1440",
+    "width": 1440,
+    "height": 2766,
+    "sections": [
+      {
+        "name": "扩展示例说明",
+        "width": 1440,
+        "height": 104,
+        "key": "layout-expansion-desktop-00",
+        "y": 0
+      },
+      {
+        "name": "精选项目",
+        "width": 1440,
+        "height": 1216,
+        "key": "layout-expansion-desktop-01",
+        "y": 104
+      },
+      {
+        "name": "Spacing / 76",
+        "width": 1440,
+        "height": 76,
+        "spacer": true,
+        "key": "layout-expansion-desktop-02",
+        "y": 1320
+      },
+      {
+        "name": "创作工具",
+        "width": 1440,
+        "height": 492,
+        "key": "layout-expansion-desktop-03",
+        "y": 1396
+      },
+      {
+        "name": "Spacing / 76",
+        "width": 1440,
+        "height": 76,
+        "spacer": true,
+        "key": "layout-expansion-desktop-04",
+        "y": 1888
+      },
+      {
+        "name": "代码之外",
+        "width": 1440,
+        "height": 726,
+        "key": "layout-expansion-desktop-05",
+        "y": 1964
+      },
+      {
+        "name": "Spacing / 76",
+        "width": 1440,
+        "height": 76,
+        "spacer": true,
+        "key": "layout-expansion-desktop-06",
+        "y": 2690
+      }
+    ]
+  },
+  {
+    "base": "layout-expansion-mobile",
+    "name": "多内容排列 / 移动 390",
+    "width": 390,
+    "height": 3204,
+    "sections": [
+      {
+        "name": "扩展示例说明",
+        "width": 390,
+        "height": 86,
+        "key": "layout-expansion-mobile-00",
+        "y": 0
+      },
+      {
+        "name": "精选项目",
+        "width": 390,
+        "height": 1505,
+        "key": "layout-expansion-mobile-01",
+        "y": 86
+      },
+      {
+        "name": "Spacing / 50",
+        "width": 390,
+        "height": 50,
+        "spacer": true,
+        "key": "layout-expansion-mobile-02",
+        "y": 1591
+      },
+      {
+        "name": "创作工具",
+        "width": 390,
+        "height": 776,
+        "key": "layout-expansion-mobile-03",
+        "y": 1641
+      },
+      {
+        "name": "Spacing / 50",
+        "width": 390,
+        "height": 50,
+        "spacer": true,
+        "key": "layout-expansion-mobile-04",
+        "y": 2417
+      },
+      {
+        "name": "代码之外",
+        "width": 390,
+        "height": 687,
+        "key": "layout-expansion-mobile-05",
+        "y": 2467
+      },
+      {
+        "name": "Spacing / 50",
+        "width": 390,
+        "height": 50,
+        "spacer": true,
+        "key": "layout-expansion-mobile-06",
+        "y": 3154
+      }
+    ]
+  },
+  {
+    "base": "profile-hero-desktop",
+    "name": "首屏 / 桌面 1440",
+    "width": 1440,
+    "height": 624,
+    "sections": [
+      {
+        "name": "自我介绍",
+        "width": 1440,
+        "height": 592,
+        "key": "profile-hero-desktop-00",
+        "y": 0
+      },
+      {
+        "name": "Spacing / 32",
+        "width": 1440,
+        "height": 32,
+        "spacer": true,
+        "key": "profile-hero-desktop-01",
+        "y": 592
+      }
+    ]
+  },
+  {
+    "base": "profile-hero-mobile",
+    "name": "首屏 / 移动 390",
+    "width": 390,
+    "height": 762,
+    "sections": [
+      {
+        "name": "自我介绍",
+        "width": 390,
+        "height": 730,
+        "key": "profile-hero-mobile-00",
+        "y": 0
+      },
+      {
+        "name": "Spacing / 32",
+        "width": 390,
+        "height": 32,
+        "spacer": true,
+        "key": "profile-hero-mobile-01",
+        "y": 730
+      }
+    ]
+  },
+  {
+    "base": "profile-lower-desktop",
+    "name": "内容与生活 / 桌面 1440",
+    "width": 1440,
+    "height": 1727,
+    "sections": [
+      {
+        "name": "顶部留白",
+        "width": 1440,
+        "height": 32,
+        "key": "profile-lower-desktop-00",
+        "y": 0
+      },
+      {
+        "name": "文字与近况",
+        "width": 1440,
+        "height": 437,
+        "key": "profile-lower-desktop-01",
+        "y": 32
+      },
+      {
+        "name": "Spacing / 72",
+        "width": 1440,
+        "height": 72,
+        "spacer": true,
+        "key": "profile-lower-desktop-02",
+        "y": 469
+      },
+      {
+        "name": "创作工具",
+        "width": 1440,
+        "height": 301,
+        "key": "profile-lower-desktop-03",
+        "y": 541
+      },
+      {
+        "name": "Spacing / 72",
+        "width": 1440,
+        "height": 72,
+        "spacer": true,
+        "key": "profile-lower-desktop-04",
+        "y": 842
+      },
+      {
+        "name": "代码之外",
+        "width": 1440,
+        "height": 396,
+        "key": "profile-lower-desktop-05",
+        "y": 914
+      },
+      {
+        "name": "Spacing / 72",
+        "width": 1440,
+        "height": 72,
+        "spacer": true,
+        "key": "profile-lower-desktop-06",
+        "y": 1310
+      },
+      {
+        "name": "联系",
+        "width": 1440,
+        "height": 243,
+        "key": "profile-lower-desktop-07",
+        "y": 1382
+      },
+      {
+        "name": "Spacing / 42",
+        "width": 1440,
+        "height": 42,
+        "spacer": true,
+        "key": "profile-lower-desktop-08",
+        "y": 1625
+      },
+      {
+        "name": "页脚",
+        "width": 1440,
+        "height": 60,
+        "key": "profile-lower-desktop-09",
+        "y": 1667
+      }
+    ]
+  },
+  {
+    "base": "projects-desktop",
+    "name": "项目模块 / 桌面 1440",
+    "width": 1440,
+    "height": 1280,
+    "sections": [
+      {
+        "name": "顶部留白",
+        "width": 1440,
+        "height": 32,
+        "key": "projects-desktop-00",
+        "y": 0
+      },
+      {
+        "name": "精选项目",
+        "width": 1440,
+        "height": 1216,
+        "key": "projects-desktop-01",
+        "y": 32
+      },
+      {
+        "name": "Spacing / 32",
+        "width": 1440,
+        "height": 32,
+        "spacer": true,
+        "key": "projects-desktop-02",
+        "y": 1248
+      }
+    ]
+  },
+  {
+    "base": "projects-mobile",
+    "name": "项目模块 / 移动 390",
+    "width": 390,
+    "height": 1553,
+    "sections": [
+      {
+        "name": "顶部留白",
+        "width": 390,
+        "height": 24,
+        "key": "projects-mobile-00",
+        "y": 0
+      },
+      {
+        "name": "精选项目",
+        "width": 390,
+        "height": 1505,
+        "key": "projects-mobile-01",
+        "y": 24
+      },
+      {
+        "name": "Spacing / 24",
+        "width": 390,
+        "height": 24,
+        "spacer": true,
+        "key": "projects-mobile-02",
+        "y": 1529
+      }
+    ]
+  },
+  {
+    "base": "tech-tools-desktop",
+    "name": "创作工具 / 桌面 1312",
+    "width": 1312,
+    "height": 349,
+    "sections": [
+      {
+        "name": "创作工具",
+        "width": 1312,
+        "height": 349,
+        "key": "tech-tools-desktop-00",
+        "y": 0
+      }
+    ]
+  },
+  {
+    "base": "tech-tools-mobile",
+    "name": "创作工具 / 移动 390",
+    "width": 390,
+    "height": 513,
+    "sections": [
+      {
+        "name": "创作工具",
+        "width": 390,
+        "height": 513,
+        "key": "tech-tools-mobile-00",
+        "y": 0
+      }
+    ]
+  }
+]
