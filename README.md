@@ -6,6 +6,33 @@
 
 **AI 协作说明：本项目由人类提出需求、选择设计并验收，AI（ChatGPT / Codex）协助完成界面设计、代码实现、测试与文档。** 这是开发方式说明，不构成额外的署名或使用条件。
 
+## 项目预览
+
+以下为项目运行时的实际截图，使用可替换的示例内容。点击图片可查看原图。
+
+### 桌面端主页
+
+大字号个人介绍、原创工作台插画，以及博客、作品和个人内容模块，组成自己的主页。
+
+[![uPage 桌面端主页：个人介绍、工作台插画与博客入口](docs/images/homepage-desktop.jpg)](docs/images/homepage-desktop.jpg)
+
+<details>
+<summary>查看手机端主页</summary>
+
+窄屏下内容自动纵向排列，个人介绍、按钮和插画保持清晰的阅读顺序。
+
+<p align="center">
+  <a href="docs/images/homepage-mobile.jpg"><img src="docs/images/homepage-mobile.jpg" alt="uPage 手机端主页：纵向排列的个人介绍、操作按钮和工作台插画" width="320" /></a>
+</p>
+
+</details>
+
+### 从编辑到发布
+
+![uPage 使用流程：可视化编辑、保存全部页面、构建静态网站、发布到静态托管服务](docs/images/workflow.svg)
+
+在本地编辑并保存内容，再构建、发布整个 `dist/` 目录。支持多页面与独立路由，发布后的页面无需运行编辑器。
+
 ## 快速开始
 
 需要 **Node.js 22.18 或更高版本**，以及 npm。
@@ -14,7 +41,7 @@
 git clone https://github.com/uMisty/uPage.git
 cd uPage
 npm install
-npm run edit
+npm run editor
 ```
 
 浏览器会自动打开编辑器，默认地址为 `http://127.0.0.1:4173/__edit/`，实际地址以终端输出为准。
@@ -35,6 +62,8 @@ npm run preview
 ## 可视化编辑器
 
 编辑器采用三栏布局：左侧管理页面与模块，中间是可直接编辑的画布，右侧提供当前选中内容的详细设置。
+
+[![uPage 可视化编辑器：左侧页面图层、中间编辑画布、右侧个人介绍设置](docs/images/editor.jpg)](docs/images/editor.jpg)
 
 ### 页面与布局
 
@@ -62,13 +91,15 @@ npm run preview
 
 支持标题、列表、引用、链接、图片、表格、代码块等常用语法。点击“预览 Markdown”或按 Esc 切回渲染结果，再次点击即可继续编辑；这里的 Esc 仅切换预览，不撤销内容。右侧可以修改模块名称、文字色和背景色。
 
+[![Markdown 编辑界面：画布中的源码编辑与格式工具栏，右侧模块名称和颜色设置](docs/images/markdown-editor.jpg)](docs/images/markdown-editor.jpg)
+
 原始 HTML 按文字显示，危险链接协议会被拒绝。Markdown 内容在构建时渲染为 HTML，发布后无需浏览器运行 Markdown 编辑器或解析器。
 
 ### 保存机制
 
 “保存全部页面”会将所有页面写入 `public/pages.json`。首次使用且该文件不存在时，从 `public/site.config.json` 导入初始页面；保存后，以 `pages.json` 为准。离开有未保存修改的页面时会提示。
 
-后台仅在 `npm run edit` 时启用，默认只监听本机。它是本地创作工具，没有在线账号或多人协作功能。静态发布的网站不提供编辑器入口和保存接口。
+后台仅在 `npm run editor` 时启用，默认只监听本机。它是本地创作工具，没有在线账号或多人协作功能。静态发布的网站不提供编辑器入口和保存接口。
 
 ## 模块库
 
@@ -165,7 +196,7 @@ npm run preview
 
 | 命令 | 用途 |
 | --- | --- |
-| `npm run edit` | 启动本地编辑器，默认端口 4173 |
+| `npm run editor` | 启动本地编辑器，默认端口 4173 |
 | `npm run dev` | 启动前端开发服务，默认端口 5173 |
 | `npm run build` | 类型检查并生成所有静态页面 |
 | `npm run preview` | 本地预览构建产物 |

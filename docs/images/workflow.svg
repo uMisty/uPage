@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" fill="none">
+  <title>uPage：从编辑个人主页到静态发布</title>
+  <desc>在本地可视化编辑器中组合模块和编写内容，保存全部页面到 pages.json，构建为 dist 目录，最后将整个目录发布到静态托管服务。</desc>
+  <rect width="1200" height="360" rx="24" fill="#F5F3ED"/>
+  <g font-family="'Noto Sans SC','Microsoft YaHei',sans-serif">
+    <text x="40" y="54" fill="#2853E8" font-size="15" font-weight="600" letter-spacing="2">uPage / HOW IT WORKS</text>
+    <text x="40" y="99" fill="#242822" font-size="30" font-weight="600">把你的内容，变成自己的站点。</text>
+    <g fill="#FFFFFF" stroke="#D5D8CF">
+      <rect x="40" y="132" width="256" height="158" rx="16"/>
+      <rect x="328" y="132" width="256" height="158" rx="16"/>
+      <rect x="616" y="132" width="256" height="158" rx="16"/>
+      <rect x="904" y="132" width="256" height="158" rx="16" fill="#242B26" stroke="#242B26"/>
+    </g>
+    <g fill="#2853E8" font-size="14" font-weight="600">
+      <text x="62" y="164">01 / 编辑</text><text x="350" y="164">02 / 保存</text><text x="638" y="164">03 / 构建</text>
+    </g>
+    <text x="926" y="164" fill="#CEDABC" font-size="14" font-weight="600">04 / 发布</text>
+    <g fill="#242822" font-size="23" font-weight="600">
+      <text x="62" y="202">在页面上直接创作</text><text x="350" y="202">保存全部页面</text><text x="638" y="202">生成静态网站</text>
+    </g>
+    <text x="926" y="202" fill="#FFFFFF" font-size="23" font-weight="600">上线你的个人主页</text>
+    <g fill="#71766C" font-size="15">
+      <text x="62" y="236">组合模块 · 修改文字与图片</text><text x="62" y="260">调整配色 · 编写 Markdown</text>
+      <text x="350" y="236">页面内容与布局写入</text><text x="350" y="260" font-family="Consolas,monospace">public/pages.json</text>
+      <text x="638" y="236" font-family="Consolas,monospace">npm run build</text><text x="638" y="260">输出完整 HTML 与静态资源</text>
+    </g>
+    <g fill="#DFE6D5" font-size="15"><text x="926" y="236">将整个 dist/ 目录</text><text x="926" y="260">发布到静态托管服务</text></g>
+    <g stroke="#2853E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M303 211h18m-6-6 6 6-6 6"/><path d="M591 211h18m-6-6 6 6-6 6"/><path d="M879 211h18m-6-6 6 6-6 6"/>
+    </g>
+    <text x="40" y="330" fill="#71766C" font-size="14">本地编辑，多页面管理；发布后无需运行编辑器或 Node 服务。内容更新后重新保存、构建与发布。</text>
+  </g>
+</svg>
