@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-18",
+  "fileKey": "W1YzNgkM2X2TH9enCZeS8X",
+  "pageId": "2:4",
+  "boardId": "43:2",
+  "url": "https://www.figma.com/design/W1YzNgkM2X2TH9enCZeS8X?node-id=43-2",
+  "assets": [
+    { "name": "upage-icon", "nodeId": "43:8", "source": "public/assets/upage-icon.svg", "exports": ["SVG", "PNG 512px"] },
+    { "name": "favicon", "nodeId": "43:16", "source": "public/favicon.svg", "exports": ["SVG", "PNG 16px", "PNG 32px", "PNG 48px"] },
+    { "name": "apple-touch-icon", "nodeId": "43:24", "source": "public/assets/upage-icon.svg", "background": "#2853E8", "exports": ["PNG 180px"] }
+  ],
+  "validation": {
+    "editableVectors": true,
+    "svgAndPngExportSucceededForAllAssets": true,
+    "boardScreenshotReviewed": true,
+    "lightAndDarkTabPreviews": true,
+    "faviconIco": "Generated locally by design/render-icons.cjs; Figma provides SVG and PNG sources."
+  }
+}

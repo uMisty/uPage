@@ -1,4 +1,6 @@
 import { z } from 'zod'
+import { extraSchemas } from './extra-sections'
+import { getToolIcon } from './tool-icons'
 
 const text = z.string().trim()
 const httpUrl = text.refine(value => {
@@ -6,7 +8,15 @@ const httpUrl = text.refine(value => {
 }, '请填写完整的 HTTP(S) 地址')
 const optionalUrl = z.union([z.literal(''), httpUrl]).default('')
 const asset = text.refine(value => !value || /^(https?:\/\/|\/(?!\/))/.test(value), '素材须使用站内绝对路径或 HTTP(S) 地址')
-const color = text.regex(/^#[\da-f]{6}$/i, '颜色格式为 #RRGGBB')
+export const toolIconSchema = z.union([asset, text.refine(value => Boolean(getToolIcon(value)), '请选择有效的 Lucide 或 Simple Icons 图标')])
+export const colorSchema = text.regex(/^#[\da-f]{6}$/i, '颜色格式为 #RRGGBB')
+const color = colorSchema
+export const markdownBlockSchema = z.object({
+  name: text.min(1).default('Markdown'),
+  content: z.string().max(200_000).default('## 新的篇章\n\n在这里写下你的故事。'),
+  textColor: z.union([z.literal(''), color]).default(''),
+  background: z.union([z.literal(''), color]).default(''),
+})
 const heading = z.object({ eyebrow: text, title: text, moreLabel: text.default('') })
 export const projectSchema = z.object({
   name: text.min(1), description: text, summary: text.optional(), tags: z.array(text).default([]),
@@ -15,7 +25,10 @@ export const projectSchema = z.object({
   featured: z.boolean().default(false), releaseLabel: text.default('主推作品'),
 })
 export const configSchema = z.object({
+  ...extraSchemas,
   version: z.literal(1),
+  textColors: z.record(z.string().regex(/^[a-zA-Z0-9_.-]+$/), color).default({}),
+  markdownBlocks: z.record(z.string().regex(/^markdown-[a-z0-9-]+$/), markdownBlockSchema).default({}),
   site: z.object({ title: text.min(1), description: text, lang: text.default('zh-CN'), footer: text, footerLabel: text, footerUrl: optionalUrl }),
   theme: z.object({ background: color, text: color, muted: color, accent: color, line: color, dark: color, soft: color }),
   profile: z.object({
@@ -40,7 +53,7 @@ export const configSchema = z.object({
     defaultCategory: text.default('随笔'),
   }),
   now: z.object({ enabled: z.boolean(), eyebrow: text, title: z.array(text), updatedLabel: text, items: z.array(z.object({ label: text, text })) }),
-  toolGroups: z.array(z.object({ name: text, items: z.array(z.object({ name: text, purpose: text, icon: asset.default(''), mark: text.default(''), url: optionalUrl })) })),
+  toolGroups: z.array(z.object({ name: text, items: z.array(z.object({ name: text, purpose: text, icon: toolIconSchema.default(''), mark: text.default(''), url: optionalUrl })) })),
   interests: z.array(z.object({ name: text, description: text, image: asset.default(''), imageAlt: text.default('') })),
   contact: z.object({ enabled: z.boolean(), eyebrow: text, title: text, mobileTitle: text, description: text, mobileDescription: text, email: z.union([z.literal(''), z.email()]) }),
 })

@@ -1,5 +1,6 @@
 import type { IncomingMessage, ServerResponse } from 'node:http'
 import { createFeedService, loadConfig } from './feed-service'
+import { loadPages } from './editor'
 
 export function feedMiddleware(root: string) {
   const getFeed = createFeedService(root)
@@ -10,7 +11,11 @@ export function feedMiddleware(root: string) {
     response.setHeader('X-Content-Type-Options', 'nosniff')
     response.setHeader('Cache-Control', 'no-store')
     if (request.method !== 'GET') { response.writeHead(405, { Allow: 'GET' }); response.end(JSON.stringify({ error: 'Method not allowed' })); return }
-    try { response.end(JSON.stringify(await getFeed(await loadConfig(root)))) }
+    try {
+      const route = new URL(request.url!, 'http://localhost').searchParams.get('page') || '/'
+      const config = (await loadPages(root)).pages.find(page => page.route === (route.endsWith('/') ? route : `${route}/`))?.config ?? await loadConfig(root)
+      response.end(JSON.stringify(await getFeed(config)))
+    }
     catch (error) {
       console.error('[uPage RSS]', error instanceof Error ? error.message : error)
       response.statusCode = 502

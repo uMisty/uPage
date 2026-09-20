@@ -10,7 +10,7 @@ const shortDate = (date: string) => date ? date.slice(5, 10).replace('-', '.') :
 
 <template>
   <div class="writing-main">
-    <SectionHeading id="writing-title" v-bind="config.sections.writing" :more-url="config.blog.url" />
+    <SectionHeading id="writing-title" v-bind="config.sections.writing" edit-path="sections.writing" :more-url="config.blog.url" />
     <div class="article-list" :aria-busy="loading">
       <div v-if="loading && !articles.length" class="feed-state" role="status">
         <span class="sr-only">{{ config.labels.loading }}</span>

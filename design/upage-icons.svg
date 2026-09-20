@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+    <rect width="1200" height="720" fill="#F5F3ED"/>
+    <g font-family="Segoe UI, Arial, sans-serif" fill="#242822">
+      <text x="64" y="76" font-size="20" letter-spacing="3">uPAGE / IDENTITY</text>
+      <text x="64" y="139" font-size="44" font-weight="650">A page of your own.</text>
+      <path d="M64 174H1136" stroke="#D5D8CF"/>
+      <image x="88" y="220" width="248" height="248" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNjQgNjQiIGZpbGw9Im5vbmUiIHJvbGU9ImltZyIgYXJpYS1sYWJlbGxlZGJ5PSJ0aXRsZSBkZXNjIj4KICA8dGl0bGUgaWQ9InRpdGxlIj51UGFnZTwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPumStOiTneW6leS4iueahOaalueZveaKmOinkumhtemdou+8jOS4reWkrueahOWtl+avjSB1IOS7o+ihqOWxnuS6juS9oOeahOS4quS6uuepuumXtOOAgjwvZGVzYz4KICA8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxNiIgZmlsbD0iIzI4NTNFOCIvPgogIDxwYXRoIGQ9Ik0xOSAxMGgyMmw5IDl2MzBhNSA1IDAgMCAxLTUgNUgxOWE1IDUgMCAwIDEtNS01VjE1YTUgNSAwIDAgMSA1LTVaIiBmaWxsPSIjRjVGM0VEIi8+CiAgPHBhdGggZD0iTTQxIDEwdjdhMiAyIDAgMCAwIDIgMmg3IiBmaWxsPSIjQTlCQUZGIi8+CiAgPHBhdGggZD0iTTI0IDI3djExYTggOCAwIDAgMCAxNiAwVjI3IiBzdHJva2U9IiMyODUzRTgiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo="/>
+      <text x="88" y="524" font-size="22">01 / Project icon</text>
+      <text x="88" y="555" font-size="16" fill="#71766C">Your page. Your work. Your everyday.</text>
+      <rect x="424" y="220" width="320" height="248" rx="20" fill="#E8EAE3"/>
+      <image x="520" y="272" width="128" height="128" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIiBmaWxsPSJub25lIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI4IiBmaWxsPSIjMjg1M0U4Ii8+CiAgPHBhdGggZD0iTTcgOHYxMWE5IDkgMCAwIDAgMTggMFYxNGgtNXY1YTQgNCAwIDAgMS04IDBWOEg3WiIgZmlsbD0iI0Y1RjNFRCIvPgogIDxwYXRoIGQ9Ik0yMCA0djZoNmwtNi02WiIgZmlsbD0iI0Y1RjNFRCIvPgo8L3N2Zz4K"/>
+      <text x="424" y="524" font-size="22">02 / Browser favicon</text>
+      <text x="424" y="555" font-size="16" fill="#71766C">Simplified silhouette for small sizes.</text>
+      <rect x="800" y="220" width="336" height="112" rx="16" fill="#E8EAE3"/>
+      <rect x="816" y="246" width="304" height="54" rx="10" fill="#FFFFFF"/>
+      <image x="833" y="263" width="20" height="20" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIiBmaWxsPSJub25lIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI4IiBmaWxsPSIjMjg1M0U4Ii8+CiAgPHBhdGggZD0iTTcgOHYxMWE5IDkgMCAwIDAgMTggMFYxNGgtNXY1YTQgNCAwIDAgMS04IDBWOEg3WiIgZmlsbD0iI0Y1RjNFRCIvPgogIDxwYXRoIGQ9Ik0yMCA0djZoNmwtNi02WiIgZmlsbD0iI0Y1RjNFRCIvPgo8L3N2Zz4K"/>
+      <text x="868" y="279" font-size="16">uPage · Personal space</text>
+      <rect x="800" y="356" width="336" height="112" rx="16" fill="#242822"/>
+      <image x="832" y="397" width="16" height="16" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIiBmaWxsPSJub25lIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI4IiBmaWxsPSIjMjg1M0U4Ii8+CiAgPHBhdGggZD0iTTcgOHYxMWE5IDkgMCAwIDAgMTggMFYxNGgtNXY1YTQgNCAwIDAgMS04IDBWOEg3WiIgZmlsbD0iI0Y1RjNFRCIvPgogIDxwYXRoIGQ9Ik0yMCA0djZoNmwtNi02WiIgZmlsbD0iI0Y1RjNFRCIvPgo8L3N2Zz4K"/><image x="885" y="389" width="32" height="32" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIiBmaWxsPSJub25lIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI4IiBmaWxsPSIjMjg1M0U4Ii8+CiAgPHBhdGggZD0iTTcgOHYxMWE5IDkgMCAwIDAgMTggMFYxNGgtNXY1YTQgNCAwIDAgMS04IDBWOEg3WiIgZmlsbD0iI0Y1RjNFRCIvPgogIDxwYXRoIGQ9Ik0yMCA0djZoNmwtNi02WiIgZmlsbD0iI0Y1RjNFRCIvPgo8L3N2Zz4K"/><image x="956" y="381" width="48" height="48" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIiBmaWxsPSJub25lIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI4IiBmaWxsPSIjMjg1M0U4Ii8+CiAgPHBhdGggZD0iTTcgOHYxMWE5IDkgMCAwIDAgMTggMFYxNGgtNXY1YTQgNCAwIDAgMS04IDBWOEg3WiIgZmlsbD0iI0Y1RjNFRCIvPgogIDxwYXRoIGQ9Ik0yMCA0djZoNmwtNi02WiIgZmlsbD0iI0Y1RjNFRCIvPgo8L3N2Zz4K"/>
+      <text x="1030" y="414" font-size="14" fill="#F5F3ED">16 / 32 / 48</text>
+      <text x="800" y="524" font-size="22">03 / At home in a tab</text>
+      <text x="800" y="555" font-size="16" fill="#71766C">Clear on light and dark browser chrome.</text>
+      <path d="M64 614H1136" stroke="#D5D8CF"/>
+      <circle cx="76" cy="662" r="12" fill="#2853E8"/><text x="100" y="668" font-size="16">#2853E8</text>
+      <circle cx="252" cy="662" r="12" fill="#F5F3ED" stroke="#D5D8CF"/><text x="276" y="668" font-size="16">#F5F3ED</text>
+      <text x="845" y="668" font-size="16">u + page / Original vector artwork</text>
+    </g>
+  </svg>

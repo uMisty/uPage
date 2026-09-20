@@ -1,10 +1,12 @@
-import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { inject, onBeforeUnmount, onMounted, ref } from 'vue'
 import type { SiteConfig } from '../../shared/config'
-import { feedSchema, parseFeed, type Article } from '../../shared/feed'
+import { feedSchema, parseFeed, type Article, type FeedResult } from '../../shared/feed'
 
 export function useFeed(blog: SiteConfig['blog']) {
-  const articles = ref<Article[]>([])
-  const loading = ref(true)
+  const snapshot = inject<FeedResult | undefined>('staticFeed', undefined)
+  const editorPreview = inject('editorPreview', false)
+  const articles = ref<Article[]>(snapshot?.articles ?? [])
+  const loading = ref(!snapshot)
   const failed = ref(false)
   const stale = ref(false)
   let controller: AbortController | undefined
@@ -19,10 +21,10 @@ export function useFeed(blog: SiteConfig['blog']) {
     const timer = setTimeout(() => current.abort(), 15_000)
     try {
       if (!blog.feedUrl) { articles.value = []; stale.value = false; return }
-      const url = blog.mode === 'direct' ? blog.feedUrl : blog.mode === 'snapshot' ? '/feed.json' : '/api/feed'
-      const response = await fetch(url, { signal: current.signal, cache: 'no-store', credentials: 'omit' })
+      const url = editorPreview ? '/__edit/api/feed' : blog.mode === 'direct' ? blog.feedUrl : blog.mode === 'snapshot' ? '/feed.json' : `/api/feed${location.pathname === '/' ? '' : `?page=${encodeURIComponent(location.pathname)}`}`
+      const response = await fetch(url, { signal: current.signal, cache: 'no-store', credentials: 'omit', ...(editorPreview ? { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Upage-Editor': '1' }, body: JSON.stringify(blog) } : {}) })
       if (!response.ok) throw new Error(`HTTP ${response.status}`)
-      if (blog.mode === 'direct') {
+      if (blog.mode === 'direct' && !editorPreview) {
         const text = await response.text()
         if (text.length > 2 * 1024 * 1024) throw new Error('订阅过大')
         articles.value = parseFeed(text, new URL(blog.feedUrl, location.href).href, blog.limit)
@@ -42,6 +44,7 @@ export function useFeed(blog: SiteConfig['blog']) {
     }
   }
   onMounted(() => {
+    if (snapshot) return
     void load()
     if (blog.mode !== 'snapshot') refresh = setInterval(() => { if (document.visibilityState === 'visible') void load() }, blog.cacheMinutes * 60_000)
   })

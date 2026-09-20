@@ -1,0 +1,351 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "id": "home",
+      "route": "/",
+      "config": {
+        "timeline": {
+          "eyebrow": "THE JOURNEY",
+          "title": "一路走来。",
+          "description": "记录工作、学习与重要转折。以下是可替换的示例条目。",
+          "items": [
+            {
+              "period": "2026 — 至今",
+              "title": "新的开始",
+              "organization": "团队 / 学校 / 独立创作",
+              "description": "在这里介绍你的角色、经历和收获。",
+              "url": ""
+            },
+            {
+              "period": "2025",
+              "title": "一个值得纪念的时刻",
+              "organization": "个人里程碑",
+              "description": "记录一段学习经历，或一个完成的目标。",
+              "url": ""
+            }
+          ]
+        },
+        "articles": {
+          "eyebrow": "SELECTED WRITING",
+          "title": "值得慢慢读。",
+          "description": "手动挑选文章、笔记或系列内容，可链接到站内页面。",
+          "items": [
+            {
+              "title": "从这里开始了解我",
+              "date": "2026-01-01",
+              "category": "置顶 · 示例",
+              "description": "替换为文章摘要，并设置对应的访问地址。",
+              "url": ""
+            },
+            {
+              "title": "最近的一点思考",
+              "date": "",
+              "category": "随笔 · 示例",
+              "description": "把值得留下的想法，整理成文字。",
+              "url": ""
+            }
+          ]
+        },
+        "gallery": {
+          "eyebrow": "LIFE IN FRAMES",
+          "title": "收集一些瞬间。",
+          "description": "照片、插画与生活切片。",
+          "items": [
+            {
+              "title": "创作的日常",
+              "description": "替换为你的摄影或插画作品。",
+              "image": "/assets/hero-creative-workspace.svg",
+              "imageAlt": "创作工作台插画",
+              "url": ""
+            },
+            {
+              "title": "另一个视角",
+              "description": "为这一刻写一句注释。",
+              "image": "",
+              "imageAlt": "",
+              "url": ""
+            }
+          ]
+        },
+        "links": {
+          "eyebrow": "AROUND THE WEB",
+          "title": "互联网的好邻居。",
+          "description": "收藏喜欢的博客、朋友与常去的网站。",
+          "items": [
+            {
+              "name": "一个喜欢的博客",
+              "description": "介绍这个网站值得阅读的理由。",
+              "icon": "",
+              "url": ""
+            },
+            {
+              "name": "一位创作者",
+              "description": "在这里推荐朋友或灵感来源。",
+              "icon": "",
+              "url": ""
+            }
+          ]
+        },
+        "faq": {
+          "eyebrow": "GOOD TO KNOW",
+          "title": "你可能想知道。",
+          "description": "提前回答关于合作、联系或内容使用的问题。",
+          "items": [
+            {
+              "question": "如何联系我？",
+              "answer": "请在这里填写你偏好的联系方式与回复时间。"
+            },
+            {
+              "question": "可以转载这里的内容吗？",
+              "answer": "请在这里说明你的转载与署名要求。"
+            }
+          ]
+        },
+        "version": 1,
+        "textColors": {},
+        "markdownBlocks": {},
+        "site": {
+          "title": "Alex · 写代码，也创造一点不同",
+          "description": "热爱编程、设计与新事物，把想法变成有温度的小作品。",
+          "lang": "zh-CN",
+          "footer": "© 2026 Alex · 公共示例",
+          "footerLabel": "example.com",
+          "footerUrl": "https://example.com"
+        },
+        "theme": {
+          "background": "#F5F3ED",
+          "text": "#242822",
+          "muted": "#71766C",
+          "accent": "#2853E8",
+          "line": "#D5D8CF",
+          "dark": "#242B26",
+          "soft": "#DFE6D5"
+        },
+        "profile": {
+          "eyebrow": "你好，我是 / 开发者",
+          "name": "Alex",
+          "suffix": ".",
+          "headline": "写代码，也创造一点不同。",
+          "headlineLines": [
+            "写代码，也创造",
+            "一点不同。"
+          ],
+          "bio": [
+            "热爱编程、设计与新事物，",
+            "把想法变成有温度的小作品。"
+          ],
+          "motto": [
+            "保持好奇，",
+            "持续创造。"
+          ],
+          "image": "/assets/hero-creative-workspace.svg",
+          "imageAlt": "一张摆着电脑、笔记本、咖啡和绿植的创作工作台",
+          "blogLabel": "阅读博客",
+          "projectsLabel": "查看我的作品"
+        },
+        "sections": {
+          "projects": {
+            "eyebrow": "精选项目",
+            "title": "把想法，做成作品。",
+            "moreLabel": "全部项目",
+            "moreUrl": "https://example.com/projects"
+          },
+          "writing": {
+            "eyebrow": "文字与近况",
+            "title": "随手写下。",
+            "moreLabel": "全部文章"
+          },
+          "tools": {
+            "eyebrow": "创作工具",
+            "title": "我的工作台。",
+            "moreLabel": "",
+            "description": "用顺手的工具，把灵感变成日常。"
+          },
+          "interests": {
+            "eyebrow": "代码之外",
+            "title": "生活，也有灵感。",
+            "moreLabel": "",
+            "description": "离开屏幕，收集一点新的视角。"
+          }
+        },
+        "labels": {
+          "demo": "Demo",
+          "source": "GitHub 源码",
+          "noProjectLinks": "暂未开放链接",
+          "projectDateSuffix": "示例项目",
+          "retry": "重新加载",
+          "loading": "正在读取最近的文章…",
+          "emptyFeed": "还没有文章，下一次灵感正在路上。",
+          "feedError": "文章暂时没有加载出来，请稍后再试。",
+          "staleFeed": "订阅暂时无法更新，先看看这些文章。"
+        },
+        "projects": [
+          {
+            "name": "Paper Notes",
+            "description": "轻量笔记与灵感收集工具。",
+            "summary": "把零散的灵感、阅读摘录和日常笔记，收进一个安静的小空间。",
+            "tags": [
+              "React",
+              "TypeScript"
+            ],
+            "image": "/assets/project-notes.svg",
+            "imageAlt": "Paper Notes 笔记应用预览",
+            "background": "#DDE5D5",
+            "demoUrl": "https://example.com/projects/notes",
+            "githubUrl": "https://example.com/github/notes",
+            "releasedAt": "2026-09-18",
+            "featured": true,
+            "releaseLabel": "最近推出"
+          },
+          {
+            "name": "Focus Timer",
+            "description": "为专注留出一小段安静的时间。",
+            "tags": [
+              "Vue",
+              "CSS"
+            ],
+            "image": "/assets/project-timer.svg",
+            "imageAlt": "Focus Timer 专注计时器预览",
+            "background": "#D7E1F5",
+            "demoUrl": "https://example.com/projects/timer",
+            "githubUrl": "https://example.com/github/timer",
+            "releasedAt": "2026-08-25",
+            "featured": false,
+            "releaseLabel": "主推作品"
+          }
+        ],
+        "blog": {
+          "enabled": true,
+          "url": "https://example.com/blog",
+          "feedUrl": "/feed.xml",
+          "mode": "server",
+          "limit": 3,
+          "cacheMinutes": 10,
+          "showReadingTime": true,
+          "defaultCategory": "随笔"
+        },
+        "now": {
+          "enabled": true,
+          "eyebrow": "此刻 / NOW",
+          "title": [
+            "保持好奇，",
+            "持续创造。"
+          ],
+          "updatedLabel": "2026.09 / 示例动态",
+          "items": [
+            {
+              "label": "在做",
+              "text": "打磨一个个人主页模板"
+            },
+            {
+              "label": "在学",
+              "text": "探索自然的界面动效"
+            },
+            {
+              "label": "在读",
+              "text": "整理设计与开发笔记"
+            }
+          ]
+        },
+        "toolGroups": [
+          {
+            "name": "界面开发",
+            "items": [
+              {
+                "name": "React",
+                "purpose": "组件与交互",
+                "icon": "/assets/icon-react.svg",
+                "mark": "",
+                "url": ""
+              },
+              {
+                "name": "Vue",
+                "purpose": "轻量应用界面",
+                "icon": "/assets/icon-vuedotjs.svg",
+                "mark": "",
+                "url": ""
+              }
+            ]
+          },
+          {
+            "name": "语言与运行",
+            "items": [
+              {
+                "name": "TypeScript",
+                "purpose": "类型与工程",
+                "icon": "/assets/icon-typescript.svg",
+                "mark": "",
+                "url": ""
+              },
+              {
+                "name": "Node.js",
+                "purpose": "服务端脚本",
+                "icon": "/assets/icon-nodedotjs.svg",
+                "mark": "",
+                "url": ""
+              }
+            ]
+          },
+          {
+            "name": "设计与协作",
+            "items": [
+              {
+                "name": "Figma",
+                "purpose": "设计与原型",
+                "icon": "/assets/icon-figma.svg",
+                "mark": "",
+                "url": ""
+              },
+              {
+                "name": "Git",
+                "purpose": "版本与协作",
+                "icon": "/assets/icon-git.svg",
+                "mark": "",
+                "url": ""
+              }
+            ]
+          }
+        ],
+        "interests": [
+          {
+            "name": "摄影",
+            "description": "留意日常的光影",
+            "image": "/assets/interest-camera.svg",
+            "imageAlt": "相机和远处的山峦"
+          },
+          {
+            "name": "阅读",
+            "description": "收藏值得重读的句子",
+            "image": "/assets/interest-book.svg",
+            "imageAlt": "两本叠放的书"
+          },
+          {
+            "name": "游戏",
+            "description": "在另一个世界散步",
+            "image": "/assets/interest-game.svg",
+            "imageAlt": "浅紫色背景上的游戏手柄"
+          }
+        ],
+        "contact": {
+          "enabled": true,
+          "eyebrow": "打个招呼",
+          "title": "聊聊你的下个想法。",
+          "mobileTitle": "有个新想法？",
+          "description": "关于作品、技术，或只是打个招呼。",
+          "mobileDescription": "一起做点有趣的事。",
+          "email": "hello@example.com"
+        }
+      },
+      "layout": [
+        "profile",
+        "writing",
+        "projects",
+        "tools",
+        "interests",
+        "contact",
+        "footer"
+      ]
+    }
+  ]
+}

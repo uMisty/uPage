@@ -2,9 +2,401 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
+    "timeline": {
+      "default": {
+        "eyebrow": "THE JOURNEY",
+        "title": "一路走来。",
+        "description": "记录工作、学习与重要转折。以下是可替换的示例条目。",
+        "items": [
+          {
+            "period": "2026 — 至今",
+            "title": "新的开始",
+            "organization": "团队 / 学校 / 独立创作",
+            "description": "在这里介绍你的角色、经历和收获。",
+            "url": ""
+          },
+          {
+            "period": "2025",
+            "title": "一个值得纪念的时刻",
+            "organization": "个人里程碑",
+            "description": "记录一段学习经历，或一个完成的目标。",
+            "url": ""
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "eyebrow": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "period": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "organization": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "period",
+              "title",
+              "organization",
+              "description",
+              "url"
+            ]
+          }
+        }
+      },
+      "required": [
+        "eyebrow",
+        "title",
+        "description",
+        "items"
+      ]
+    },
+    "articles": {
+      "default": {
+        "eyebrow": "SELECTED WRITING",
+        "title": "值得慢慢读。",
+        "description": "手动挑选文章、笔记或系列内容，可链接到站内页面。",
+        "items": [
+          {
+            "title": "从这里开始了解我",
+            "date": "2026-01-01",
+            "category": "置顶 · 示例",
+            "description": "替换为文章摘要，并设置对应的访问地址。",
+            "url": ""
+          },
+          {
+            "title": "最近的一点思考",
+            "date": "",
+            "category": "随笔 · 示例",
+            "description": "把值得留下的想法，整理成文字。",
+            "url": ""
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "eyebrow": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "date",
+              "category",
+              "description",
+              "url"
+            ]
+          }
+        }
+      },
+      "required": [
+        "eyebrow",
+        "title",
+        "description",
+        "items"
+      ]
+    },
+    "gallery": {
+      "default": {
+        "eyebrow": "LIFE IN FRAMES",
+        "title": "收集一些瞬间。",
+        "description": "照片、插画与生活切片。",
+        "items": [
+          {
+            "title": "创作的日常",
+            "description": "替换为你的摄影或插画作品。",
+            "image": "/assets/hero-creative-workspace.svg",
+            "imageAlt": "创作工作台插画",
+            "url": ""
+          },
+          {
+            "title": "另一个视角",
+            "description": "为这一刻写一句注释。",
+            "image": "",
+            "imageAlt": "",
+            "url": ""
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "eyebrow": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "image": {
+                "type": "string"
+              },
+              "imageAlt": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "description",
+              "image",
+              "imageAlt",
+              "url"
+            ]
+          }
+        }
+      },
+      "required": [
+        "eyebrow",
+        "title",
+        "description",
+        "items"
+      ]
+    },
+    "links": {
+      "default": {
+        "eyebrow": "AROUND THE WEB",
+        "title": "互联网的好邻居。",
+        "description": "收藏喜欢的博客、朋友与常去的网站。",
+        "items": [
+          {
+            "name": "一个喜欢的博客",
+            "description": "介绍这个网站值得阅读的理由。",
+            "icon": "",
+            "url": ""
+          },
+          {
+            "name": "一位创作者",
+            "description": "在这里推荐朋友或灵感来源。",
+            "icon": "",
+            "url": ""
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "eyebrow": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "description",
+              "icon",
+              "url"
+            ]
+          }
+        }
+      },
+      "required": [
+        "eyebrow",
+        "title",
+        "description",
+        "items"
+      ]
+    },
+    "faq": {
+      "default": {
+        "eyebrow": "GOOD TO KNOW",
+        "title": "你可能想知道。",
+        "description": "提前回答关于合作、联系或内容使用的问题。",
+        "items": [
+          {
+            "question": "如何联系我？",
+            "answer": "请在这里填写你偏好的联系方式与回复时间。"
+          },
+          {
+            "question": "可以转载这里的内容吗？",
+            "answer": "请在这里说明你的转载与署名要求。"
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "eyebrow": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string"
+              },
+              "answer": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "answer"
+            ]
+          }
+        }
+      },
+      "required": [
+        "eyebrow",
+        "title",
+        "description",
+        "items"
+      ]
+    },
     "version": {
       "type": "number",
       "const": 1
+    },
+    "textColors": {
+      "default": {},
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9_.-]+$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^#[\\da-f]{6}$"
+      }
+    },
+    "markdownBlocks": {
+      "default": {},
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^markdown-[a-z0-9-]+$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "default": "Markdown",
+            "type": "string",
+            "minLength": 1
+          },
+          "content": {
+            "default": "## 新的篇章\n\n在这里写下你的故事。",
+            "type": "string",
+            "maxLength": 200000
+          },
+          "textColor": {
+            "default": "",
+            "anyOf": [
+              {
+                "type": "string",
+                "const": ""
+              },
+              {
+                "type": "string",
+                "pattern": "^#[\\da-f]{6}$"
+              }
+            ]
+          },
+          "background": {
+            "default": "",
+            "anyOf": [
+              {
+                "type": "string",
+                "const": ""
+              },
+              {
+                "type": "string",
+                "pattern": "^#[\\da-f]{6}$"
+              }
+            ]
+          }
+        }
+      }
     },
     "site": {
       "type": "object",

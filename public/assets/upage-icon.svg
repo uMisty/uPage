@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">uPage</title>
+  <desc id="desc">钴蓝底上的暖白折角页面，中央的字母 u 代表属于你的个人空间。</desc>
+  <rect width="64" height="64" rx="16" fill="#2853E8"/>
+  <path d="M19 10h22l9 9v30a5 5 0 0 1-5 5H19a5 5 0 0 1-5-5V15a5 5 0 0 1 5-5Z" fill="#F5F3ED"/>
+  <path d="M41 10v7a2 2 0 0 0 2 2h7" fill="#A9BAFF"/>
+  <path d="M24 27v11a8 8 0 0 0 16 0V27" stroke="#2853E8" stroke-width="6" stroke-linecap="round"/>
+</svg>
