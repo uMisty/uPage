@@ -1,6 +1,27 @@
 {
-  "name": "upage",
+  "name": "uPage",
   "version": "1.0.0",
+  "description": "一个可以在页面上直接编辑的个人主页生成器。基于 Vue 3、TypeScript 和 Vite，提供本地可视化后台、可组合的内容模块和多页面管理；保存后构建为完全静态的网站。",
+  "author": {
+    "name": "uMisty",
+    "url": "https://umisty.com/"
+  },
+  "homepage": "https://github.com/uMisty/uPage#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uMisty/uPage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uMisty/uPage/issues"
+  },
+  "keywords": [
+    "personal-homepage",
+    "static-site-generator",
+    "visual-editor",
+    "vue",
+    "typescript",
+    "vite"
+  ],
   "license": "0BSD",
   "private": true,
   "type": "module",
