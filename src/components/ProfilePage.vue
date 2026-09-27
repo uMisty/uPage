@@ -3,6 +3,7 @@ import { textColorsKey, usePageEditing } from '../editor/pageEditing'
 import { computed, provide } from 'vue'
 import { defaultLayout, type SectionType } from '../../shared/pages'
 import type { SiteConfig } from '../../shared/config'
+import { renderFooter } from '../../shared/markdown'
 import ArrowIcon from './ArrowIcon.vue'
 import SectionHeading from './SectionHeading.vue'
 import ProjectShowcase from './ProjectShowcase.vue'
@@ -18,6 +19,7 @@ provide(textColorsKey, textColors)
 const { vEdit, vImage, vSection } = usePageEditing(textColors)
 const toolGroups = computed(() => props.config.toolGroups.filter(group => group.items.length))
 const blogHref = computed(() => props.config.blog.url || (props.config.blog.enabled && (props.layout ?? defaultLayout).includes('writing') ? '#writing' : ''))
+const footerHtml = computed(() => renderFooter(props.config.site.footer))
 </script>
 
 <template>
@@ -73,7 +75,7 @@ const blogHref = computed(() => props.config.blog.url || (props.config.blog.enab
       <a v-if="config.contact.email" :href="`mailto:${config.contact.email}`" class="contact-orb" :aria-label="`发送邮件至 ${config.contact.email}`"><ArrowIcon light /></a>
     </section>
 
-    <footer v-if="block === 'footer'" v-section="'footer'" class="footer"><p v-edit="'site.footer'">{{ config.site.footer }}</p><a v-if="config.site.footerUrl" :href="config.site.footerUrl" target="_blank" rel="noopener noreferrer" v-edit="'site.footerLabel'">{{ config.site.footerLabel }}</a><span v-else v-edit="'site.footerLabel'">{{ config.site.footerLabel }}</span></footer>
+    <footer v-if="block === 'footer'" v-section="'footer'" class="footer"><p v-edit="{ path: 'site.footer', format: 'markdown' }" v-html="footerHtml" /><a v-if="config.site.footerUrl" :href="config.site.footerUrl" target="_blank" rel="noopener noreferrer" v-edit="'site.footerLabel'">{{ config.site.footerLabel }}</a><span v-else v-edit="'site.footerLabel'">{{ config.site.footerLabel }}</span></footer>
     </template>
   </main>
 </template>

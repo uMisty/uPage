@@ -83,3 +83,18 @@ test('手机端普通项目封面占满列表宽度', async ({ page }) => {
     expect(layout.titleTop).toBeGreaterThanOrEqual(layout.imageBottom)
   }
 })
+
+test('首页内容在宽屏上跟随视口伸缩', async ({ page }) => {
+  await page.goto('/')
+  for (const width of [1440, 1920]) {
+    await page.setViewportSize({ width, height: 900 })
+    const layout = await page.locator('.page-shell').evaluate(shell => {
+      const padding = getComputedStyle(shell).paddingLeft
+      return { shellWidth: shell.getBoundingClientRect().width, padding, contentWidth: shell.querySelector('.hero')!.getBoundingClientRect().width }
+    })
+    expect(layout.shellWidth).toBe(width)
+    expect(layout.padding).toBe('32px')
+    expect(layout.contentWidth).toBe(width - 64)
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
+  }
+})

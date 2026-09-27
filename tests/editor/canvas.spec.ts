@@ -38,6 +38,24 @@ test('canvas text supports commit, cancel, composition and safe plain text savin
   await expect(page.locator('[data-edit-image="interests.0.image"]')).toHaveAttribute('src', '/assets/hero-creative-workspace.svg')
 })
 
+test('footer links remain editable as Markdown source', async ({ page }) => {
+  const initial = initialPages(configSchema.parse(demo))
+  initial.pages[0]!.config.site.footer = '© [uMisty](https://umisty.com)'
+  await page.route('**/__edit/api/pages', route => route.fulfill({ json: initial }))
+  await page.goto('/__edit/')
+  const footer = page.getByRole('textbox', { name: '直接编辑 site.footer', exact: true })
+  await expect(footer.locator('a')).toHaveAttribute('target', '_blank')
+  await footer.focus()
+  await expect(footer).toHaveText('© [uMisty](https://umisty.com)')
+  await footer.press('Escape')
+  await expect(footer.locator('a')).toHaveAttribute('href', 'https://umisty.com')
+  await footer.focus()
+  await footer.fill('© [新站点](https://example.com)')
+  await footer.press('Enter')
+  await expect(footer.locator('a')).toHaveAttribute('href', 'https://example.com')
+  await expect(footer.locator('a')).toHaveAttribute('target', '_blank')
+})
+
 test('layer drag ordering, searchable insertion and responsive editor', async ({ page }) => {
   await page.route('**/__edit/api/pages', route => route.fulfill({ json: initialPages(configSchema.parse(demo)) }))
   await page.setViewportSize({ width: 1600, height: 1000 })

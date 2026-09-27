@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { configSchema } from '../../shared/config'
-import { renderMarkdown } from '../../shared/markdown'
+import { renderFooter, renderMarkdown } from '../../shared/markdown'
 import { initialPages, pagesSchema } from '../../shared/pages'
 import config from '../../public/site.config.json'
 
@@ -13,6 +13,14 @@ describe('Markdown sections and text colors', () => {
     const html = renderMarkdown('<script>alert(1)</script>\n\n<img src=x onerror=alert(1)>\n\n[x](javascript:alert(1))\n\n[x](jav&#x61;script:alert(1))')
     expect(html).not.toMatch(/<script|<img|href="javascript:/)
     expect(html).toContain('&lt;script&gt;')
+  })
+  it('renders safe copyright links with external links in a new tab', () => {
+    const html = renderFooter('© [uMisty](https://umisty.com). Powered by [Thus.Live](https://github.com/uMisty/Thus.Live). [关于](/about/) <script> [bad](javascript:alert(1))')
+    expect(html).toContain('href="https://umisty.com" target="_blank" rel="noopener noreferrer"')
+    expect(html).toContain('href="https://github.com/uMisty/Thus.Live" target="_blank" rel="noopener noreferrer"')
+    expect(html).toContain('href="/about/"')
+    expect(html).not.toContain('href="/about/" target="_blank"')
+    expect(html).not.toMatch(/<script|href="javascript:/)
   })
   it('loads old pages and validates independent Markdown instances', () => {
     const document = initialPages(configSchema.parse(config))

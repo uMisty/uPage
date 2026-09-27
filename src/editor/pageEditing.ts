@@ -1,7 +1,7 @@
 import { inject, watch, type ComputedRef, type Directive, type InjectionKey } from 'vue'
 import { sectionLabel, type SectionType } from '../../shared/pages'
 
-export type TextTarget = string | { path: string; separator: string }
+export type TextTarget = string | { path: string; separator?: string; format?: 'markdown' }
 export interface PageEditing {
   read(path: string): unknown
   write(path: string, value: unknown): void
@@ -45,14 +45,28 @@ export function usePageEditing(ownColors?: ComputedRef<Record<string, string>>) 
       el.setAttribute('aria-label', `直接编辑 ${pathOf(binding.value)}`)
       el.setAttribute('spellcheck', 'false')
       let original = ''
-      el.addEventListener('focus', () => { original = el.innerText; select(el); editor.text(pathOf(targets.get(el)!), getComputedStyle(el).color) })
+      let originalHtml = ''
+      el.addEventListener('focus', () => {
+        const target = targets.get(el)!
+        if (typeof target !== 'string' && target.format === 'markdown') {
+          originalHtml = el.innerHTML
+          el.innerText = String(editor.read(target.path) ?? '')
+        }
+        original = el.innerText
+        select(el)
+        editor.text(pathOf(target), getComputedStyle(el).color)
+      })
       el.addEventListener('input', () => editor.pending(el.innerText !== original))
       el.addEventListener('blur', () => {
         editor.pending(false)
-        if (el.innerText === original) return
         const target = targets.get(el)!
+        const isMarkdown = typeof target !== 'string' && target.format === 'markdown'
+        if (el.innerText === original) {
+          if (isMarkdown) el.innerHTML = originalHtml
+          return
+        }
         const value = el.innerText.replace(/\r\n/g, '\n').trim()
-        editor.write(pathOf(target), typeof target === 'string' ? value : value.split(target.separator))
+        editor.write(pathOf(target), typeof target === 'string' || !target.separator ? value : value.split(target.separator))
       })
       el.addEventListener('keydown', event => {
         if (event.isComposing) return

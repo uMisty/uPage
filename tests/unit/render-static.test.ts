@@ -14,13 +14,15 @@ it('exports text colors and repeated Markdown into static HTML without editor co
       'markdown-one': { name: '一', content: '## 第一段\n\n**粗体**', textColor: '#DC4965', background: '#FFFFFF' },
       'markdown-two': { name: '二', content: '## 第二段\n\n[链接](/about/)', textColor: '', background: '' },
     }
-    page.layout = ['profile', 'markdown-two', 'projects', 'markdown-one']
+    page.config.site.footer = '© [uMisty](https://umisty.com) · [关于](/about/)'
+    page.layout = ['profile', 'markdown-two', 'projects', 'markdown-one', 'footer']
     const html = await render(page, { articles: [], fetchedAt: new Date().toISOString(), stale: false })
     expect(html).toContain('color:#31856C')
     expect(html).toContain('color:#7856C8')
     expect(html).toContain('color:#DC4965;background:#FFFFFF')
     expect(html).toContain('<strong>粗体</strong>')
     expect(html).toContain('href="/about/"')
+    expect(html).toContain('href="https://umisty.com" target="_blank" rel="noopener noreferrer"')
     expect(html.indexOf('第二段')).toBeLessThan(html.indexOf('第一段'))
     expect(html).not.toMatch(/contenteditable|data-edit-|<script/)
   } finally { await server.close() }
