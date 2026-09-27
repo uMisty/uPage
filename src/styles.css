@@ -224,15 +224,18 @@ a.tool-item:hover .tool-icon { background: #465146; }
   .project-actions .button-outline { min-width: 154px; }
   .project-release { display: none; }
   .project-list { margin-top: 28px; }
-  .project-row { grid-template-columns: minmax(0, 1fr) 88px; grid-template-rows: auto auto auto auto; column-gap: 20px; row-gap: 14px; padding: 24px 0; }
-  .project-thumbnail { grid-column: 2; grid-row: 1; width: 88px; height: 55px; align-self: start; }
-  .project-copy { grid-column: 1; grid-row: 1; align-self: center; min-width: 0; }
+  .project-row { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto auto auto; row-gap: 14px; padding: 24px 0; }
+  .project-thumbnail { grid-column: 1; grid-row: 1; width: 100%; height: auto; align-self: start; }
+  .project-copy { grid-column: 1; grid-row: 2; align-self: center; min-width: 0; }
   .project-copy h3 { font-size: 21px; line-height: 28px; }
-  .project-row > .project-description { grid-column: 1 / -1; grid-row: 2; font-size: 15px; line-height: 24px; margin-top: 4px; }
-  .project-row .project-tags { grid-column: 1 / -1; grid-row: 3; }
-  .project-row .project-actions { grid-column: 1 / -1; grid-row: 4; margin-top: 4px; }
-  .project-row.no-image { grid-template-columns: minmax(0, 1fr); }
-  .project-row.no-image .project-actions { grid-column: 1; }
+  .project-row > .project-description { grid-column: 1; grid-row: 3; font-size: 15px; line-height: 24px; margin-top: 4px; }
+  .project-row .project-tags { grid-column: 1; grid-row: 4; }
+  .project-row .project-actions { grid-column: 1; grid-row: 5; margin-top: 4px; }
+  .project-row.no-image { grid-template-rows: auto auto auto auto; }
+  .project-row.no-image .project-copy { grid-row: 1; }
+  .project-row.no-image > .project-description { grid-row: 2; }
+  .project-row.no-image .project-tags { grid-row: 3; }
+  .project-row.no-image .project-actions { grid-column: 1; grid-row: 4; }
   .mobile-projects-more { display: inline-flex; margin-top: 10px; font-size: 13px; gap: 12px; }
   .mobile-projects-more .arrow-icon { width: 18px; height: 18px; }
   .writing { grid-template-columns: minmax(0, 1fr); gap: 34px; }

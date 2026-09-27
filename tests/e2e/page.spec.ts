@@ -68,3 +68,18 @@ test('扩展内容和长标题自然换行', async ({ page }) => {
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `width ${width}`).toBe(true)
   }
 })
+
+test('手机端普通项目封面占满列表宽度', async ({ page }) => {
+  await page.goto('/')
+  for (const width of [320, 390]) {
+    await page.setViewportSize({ width, height: 900 })
+    const layout = await page.locator('.project-row').first().evaluate(row => {
+      const image = row.querySelector('.project-thumbnail')!.getBoundingClientRect()
+      const title = row.querySelector('.project-copy')!.getBoundingClientRect()
+      const bounds = row.getBoundingClientRect()
+      return { imageWidth: image.width, rowWidth: bounds.width, imageBottom: image.bottom, titleTop: title.top }
+    })
+    expect(layout.imageWidth).toBeCloseTo(layout.rowWidth, 0)
+    expect(layout.titleTop).toBeGreaterThanOrEqual(layout.imageBottom)
+  }
+})
