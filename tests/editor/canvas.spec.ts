@@ -56,6 +56,16 @@ test('footer links remain editable as Markdown source', async ({ page }) => {
   await expect(footer.locator('a')).toHaveAttribute('target', '_blank')
 })
 
+test('canvas preview uses the published page width rules', async ({ page }) => {
+  await page.route('**/__edit/api/pages', route => route.fulfill({ json: initialPages(configSchema.parse(demo)) }))
+  await page.goto('/__edit/')
+  const preview = page.locator('.preview-viewport')
+  for (const [viewportWidth, contentWidth] of [[390, 342], [1000, 920], [1500, 1264], [1920, 1264]]) {
+    await preview.evaluate((element, width) => { element.style.width = `${width}px` }, viewportWidth)
+    await expect(preview.locator('.page-shell')).toHaveCSS('width', `${contentWidth}px`)
+  }
+})
+
 test('layer drag ordering, searchable insertion and responsive editor', async ({ page }) => {
   await page.route('**/__edit/api/pages', route => route.fulfill({ json: initialPages(configSchema.parse(demo)) }))
   await page.setViewportSize({ width: 1600, height: 1000 })

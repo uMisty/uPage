@@ -84,17 +84,8 @@ test('手机端普通项目封面占满列表宽度', async ({ page }) => {
   }
 })
 
-test('首页内容在宽屏上跟随视口伸缩', async ({ page }) => {
+test('首页在宽屏上保持最大内容宽度', async ({ page }) => {
+  await page.setViewportSize({ width: 1920, height: 900 })
   await page.goto('/')
-  for (const width of [1440, 1920]) {
-    await page.setViewportSize({ width, height: 900 })
-    const layout = await page.locator('.page-shell').evaluate(shell => {
-      const padding = getComputedStyle(shell).paddingLeft
-      return { shellWidth: shell.getBoundingClientRect().width, padding, contentWidth: shell.querySelector('.hero')!.getBoundingClientRect().width }
-    })
-    expect(layout.shellWidth).toBe(width)
-    expect(layout.padding).toBe('32px')
-    expect(layout.contentWidth).toBe(width - 64)
-    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
-  }
+  await expect(page.locator('.page-shell')).toHaveCSS('width', '1264px')
 })
